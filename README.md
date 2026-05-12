@@ -5,7 +5,7 @@
 # Awesome Hermes Agent Use Cases
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-32-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-33-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/ali-erfan-dev/awesome-hermes-usecases?label=Last%20Update&style=flat-square)
 ![Stars](https://img.shields.io/github/stars/ali-erfan-dev/awesome-hermes-usecases?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
@@ -43,6 +43,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 - [Content & Creative Pipelines](#content--creative-pipelines)
 - [Orchestration & Multi-Agent](#orchestration--multi-agent)
 - [Memory & Context](#memory--context)
+- [Finance & Trading](#finance--trading)
 - [Deployment Patterns](#deployment-patterns)
 - [Research & Training](#research--training)
 
@@ -111,6 +112,12 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | --- | --- |
 | [YantrikDB Cognitive Memory (via MCP)](usecases/yantrikdb-memory-mcp.md) | Replace or augment native memory with a dedicated cognitive DB — vector + knowledge graph + temporal decay + contradiction detection. Integrates over MCP, so no Hermes plugin needed. |
 | [Obsidian Vault as a Second Brain](usecases/obsidian-second-brain.md) | Wire Hermes into an Obsidian vault for persistent knowledge — read notes, create daily dashboards, cross-reference tags, maintain a self-improving personal knowledge base. |
+
+## Finance & Trading
+
+| Name | Description |
+| --- | --- |
+| [Weather Trading on Polymarket](usecases/weather-trading-polymarket.md) | Autonomous weather prediction-market trading — Kelly Criterion position sizing, EV scoring against market odds, self-calibrating with real traders reporting $300→$123K in 3 months on a $5 VPS. |
 
 ## Deployment Patterns
 
