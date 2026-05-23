@@ -5,7 +5,7 @@
 # Awesome Hermes Agent Use Cases
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-33-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-39-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/ali-erfan-dev/awesome-hermes-usecases?label=Last%20Update&style=flat-square)
 ![Stars](https://img.shields.io/github/stars/ali-erfan-dev/awesome-hermes-usecases?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
@@ -43,6 +43,8 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 - [Content & Creative Pipelines](#content--creative-pipelines)
 - [Orchestration & Multi-Agent](#orchestration--multi-agent)
 - [Memory & Context](#memory--context)
+- [Observability & Operations](#observability--operations)
+- [Security & Assurance](#security--assurance)
 - [Finance & Trading](#finance--trading)
 - [Deployment Patterns](#deployment-patterns)
 - [Research & Training](#research--training)
@@ -72,6 +74,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [GitHub PR Review (webhook)](usecases/github-pr-review-webhook.md) | Real-time PR comments via a signed GitHub webhook. End-to-end event-driven code review. |
 | [Production Software-Dev Workflow](usecases/production-software-dev-workflow.md) | A field report of daily production development on Hermes — long sessions, delegation, memory, one 12-hour run with ~2.6M replay tokens. |
 | [Local Model Quantization with TurboQuant](usecases/dev-local-model-quantization.md) | Optimize MLX models (Qwen3.5-9B) for local Apple Silicon inference using domain-specific skills — apply, benchmark, document, publish. |
+| [Hermes VS Code Workspace Stream](usecases/hermes-vscode-workspace-stream.md) | A VS Code sidebar over Hermes ACP for streaming chat, tool output, editor context, attached files, model switching, and persistent workspace sessions. |
 
 ## Frontends & UIs
 
@@ -86,6 +89,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | --- | --- |
 | [Home Assistant Control](usecases/home-assistant-control.md) | Conversational control of a smart home via four built-in HA tools — list entities, read state, call services. |
 | [Android Device Control](usecases/android-device-control.md) | Remote phone control from a Hermes chat — 36 `android_*` tools for taps, swipes, screenshots, and screen reading via a relay app. |
+| [Hermes iOS Native Engine](usecases/hermes-ios-native-engine.md) | A self-hosted iPhone companion with relay, connector, MCP sensor tools, voice, camera attachments, widgets, location, activity, and HealthKit context. |
 
 ## Content & Creative Pipelines
 
@@ -105,6 +109,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Self-Evolution](usecases/self-evolution.md) | A GEPA + DSPy loop that optimizes your Hermes skills, prompts, and tool text, producing PR-ready improvements for a few dollars per run. |
 | [Zouroboros Swarm Bridge](usecases/zouroboros-swarm-bridge.md) | Hermes as one of four interchangeable executors (Claude Code, Codex, Gemini, Hermes) inside a third-party multi-agent orchestrator. Bash-bridge adapter pattern with shared identity. |
 | [Matt Pocock Skills + Sub-Agents](usecases/matt-pocock-skills-subagents.md) | Use Matt Pocock's open-source skills (`/grill-me`, `/to-prd`, `/to-issues`) for planning and scoping, then Hermes sub-agents for parallel implementation of vertical-sliced issues — with HITL gates to stop AI slop before it ships. |
+| [Dynamic Skill Dojo](usecases/dynamic-skill-dojo.md) | A monitoring and improvement loop that reads session history, ranks weak skills, proposes patches or new skills, invokes self-evolution, and reports learning progress. |
 
 ## Memory & Context
 
@@ -112,6 +117,18 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | --- | --- |
 | [YantrikDB Cognitive Memory (via MCP)](usecases/yantrikdb-memory-mcp.md) | Replace or augment native memory with a dedicated cognitive DB — vector + knowledge graph + temporal decay + contradiction detection. Integrates over MCP, so no Hermes plugin needed. |
 | [Obsidian Vault as a Second Brain](usecases/obsidian-second-brain.md) | Wire Hermes into an Obsidian vault for persistent knowledge — read notes, create daily dashboards, cross-reference tags, maintain a self-improving personal knowledge base. |
+
+## Observability & Operations
+
+| Name | Description |
+| --- | --- |
+| [Hermes Labyrinth Observability](usecases/hermes-labyrinth-observability.md) | A read-only dashboard plugin that turns prompts, tool calls, failures, approvals, model switches, cron runs, and memory hits into auditable agent journeys. |
+
+## Security & Assurance
+
+| Name | Description |
+| --- | --- |
+| [Autonomous Penetration Testing with Kali](usecases/autonomous-penetration-testing.md) | A Kali-backed Hermes skill for authorized security assessments with scope confirmation, playbooks, zero-findings fallback, approval gates, and structured reports. |
 
 ## Finance & Trading
 
@@ -126,6 +143,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Hermes on Fly.io](usecases/hermes-on-flyio.md) | Official Fly-apps deployment guide — run Hermes as a Fly Machine with a volume-backed `/opt/data`, daily snapshots, and ~$15/month baseline. |
 | [Local & Proxy Model Backends](usecases/local-and-proxy-models.md) | Run Hermes against Ollama, vLLM, oMLX, or a custom OpenAI-compatible proxy — for cost control, data locality, or model choice beyond the defaults. |
 | [Local Model Auto-Detection](usecases/local-model-auto-detection.md) | Hermes probes your local inference server, identifies the running model, detects context window, and auto-configures — eliminates first-setup friction for Ollama, llama.cpp, MLX, and vLLM. |
+| [Headless Daemon Server](usecases/headless-daemon-server.md) | A self-managed Linux VPS pattern that runs Hermes gateway and native cron under `systemd` with a dedicated service user and reboot-safe scheduling. |
 
 ## Research & Training
 
