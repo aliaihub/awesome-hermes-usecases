@@ -96,6 +96,6 @@ method, and JSON body you would send through tweet_action. Wait for approval.
 ## Sources
 
 - Hermes Tweet repository: <https://github.com/Xquik-dev/hermes-tweet>
-- Hermes Tweet guide: <https://docs.xquik.com/guides/hermes-tweet>
+- Hermes Tweet guide: <https://github.com/Xquik-dev/hermes-tweet#readme>
 - PyPI package: <https://pypi.org/project/hermes-tweet/>
 - AgentSkill listing: <https://agentskill.sh/@xquik-dev/hermes-tweet>
