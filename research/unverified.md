@@ -31,6 +31,8 @@ The entries below are derived from the initial fact-check of candidate sources. 
 | **AI executive team on Discord** | Submission used OpenClaw-style profile vocabulary; `wanikua/become-ceo` reference needs to be verified as a real Hermes deployment. | A README in the referenced repo that names Hermes and shows Hermes-specific primitives (gateway, skills, delegation). |
 | **Raspberry Pi / edge deployment** | Pattern is reasonable but submission was framework-agnostic. Hermes officially supports Android/Termux on ARM. | A first-person write-up of Hermes on a Pi (or Termux) with specific model, config, and operational notes. |
 | **Sim (visual workflow engine) × Hermes** | Sim is a real project but the submission didn't document the Hermes integration path. | A write-up showing Sim's MCP export consumed by Hermes as an MCP server, with config and a concrete use case. |
+| **Google Workspace Orchestration** | Public Hermes-compatible repo exists, but `BruceLanLan/hermes-google-workspace` is currently below the catalog's GitHub star threshold. | Promote once the repo clears the 10-star gate, or submit under a PR explicitly labeled `nascent` with current maintainer context. |
+| **Nextcloud Cloud Workspace Integration** | Public Hermes skill repo exists, but `adnw-vinc/hermes-nextcloud` is currently below the catalog's GitHub star threshold. | Promote once the repo clears the 10-star gate, or submit under a PR explicitly labeled `nascent` with current maintainer context. |
 
 See the triage files for full rationale:
 - [`submissions-triage-2026-04.md`](./submissions-triage-2026-04.md) — first batch (20 candidates)
