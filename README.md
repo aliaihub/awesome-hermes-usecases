@@ -130,6 +130,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | Name | Description |
 | --- | --- |
 | [Autonomous Penetration Testing with Kali](usecases/autonomous-penetration-testing.md) | A Kali-backed Hermes skill for authorized security assessments with scope confirmation, playbooks, zero-findings fallback, approval gates, and structured reports. |
+| [TWZRD Agent Intel](https://intel.twzrd.xyz) | Trust scoring MCP for Solana AI agents. `score_agent(wallet)` and `preflight_check(wallet)` verify agent wallet identity and behavioral history before multi-agent delegation; `get_trust_receipt(wallet)` issues a signed trust receipt via x402 micropayment. Config: `{"mcpServers":{"twzrd-agent-intel":{"url":"https://intel.twzrd.xyz/mcp"}}}`. |
 
 ## Finance & Trading
 
