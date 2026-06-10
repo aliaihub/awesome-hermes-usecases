@@ -5,7 +5,7 @@
 # Awesome Hermes Agent Use Cases
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-39-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-44-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/ali-erfan-dev/awesome-hermes-usecases?label=Last%20Update&style=flat-square)
 ![Stars](https://img.shields.io/github/stars/ali-erfan-dev/awesome-hermes-usecases?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
@@ -57,6 +57,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Zero-Token Notifications](usecases/zero-token-notifications.md) | Cron jobs that only wake the LLM when something actually changed — pre-filter with a Python script, only pay for tokens on meaningful signal. |
 | [Intent-to-Artifacts Workflow](usecases/intent-to-artifacts.md) | A personal workflow for turning rough prompts into runbooks, RSS curation, diagrams, and notes — delivered to Telegram + markdown files. |
 | [X Social Automation Toolset](usecases/x-social-automation-toolset.md) | A native Hermes plugin for X/Twitter search, account reads, trend checks, and operator-approved actions through Xquik. |
+| [Inbox → Slack Daily Digest](usecases/inbox-slack-daily-digest.md) | A weekday 9am cron that classifies your inbox and posts a needs-reply / FYI digest to a Slack channel. No auto-replies. |
 
 ## Messaging & Team Bots
 
@@ -90,6 +91,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Home Assistant Control](usecases/home-assistant-control.md) | Conversational control of a smart home via four built-in HA tools — list entities, read state, call services. |
 | [Android Device Control](usecases/android-device-control.md) | Remote phone control from a Hermes chat — 36 `android_*` tools for taps, swipes, screenshots, and screen reading via a relay app. |
 | [Hermes iOS Native Engine](usecases/hermes-ios-native-engine.md) | A self-hosted iPhone companion with relay, connector, MCP sensor tools, voice, camera attachments, widgets, location, activity, and HealthKit context. |
+| [Personal AI Hub: Apple Health + Threads + Gmail + Calendar](usecases/personal-ai-hub-apple-health-threads-gmail.md) | Desktop Hermes + Telegram Topics that wires Apple Health, Threads (via open-source skill), Gmail, and Google Calendar into a single chat surface with cross-domain queries. |
 
 ## Content & Creative Pipelines
 
@@ -110,6 +112,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Zouroboros Swarm Bridge](usecases/zouroboros-swarm-bridge.md) | Hermes as one of four interchangeable executors (Claude Code, Codex, Gemini, Hermes) inside a third-party multi-agent orchestrator. Bash-bridge adapter pattern with shared identity. |
 | [Matt Pocock Skills + Sub-Agents](usecases/matt-pocock-skills-subagents.md) | Use Matt Pocock's open-source skills (`/grill-me`, `/to-prd`, `/to-issues`) for planning and scoping, then Hermes sub-agents for parallel implementation of vertical-sliced issues — with HITL gates to stop AI slop before it ships. |
 | [Dynamic Skill Dojo](usecases/dynamic-skill-dojo.md) | A monitoring and improvement loop that reads session history, ranks weak skills, proposes patches or new skills, invokes self-evolution, and reports learning progress. |
+| [Hermes Kanban: Multi-Agent Swarm from Slack](usecases/kanban-multi-agent-swarm.md) | The v0.15 `/kanban` slash command turns a Slack message into a durable multi-agent swarm with named workers, a verifier, and a synthesizer — persistent via `~/.hermes/kanban.db`. |
 
 ## Memory & Context
 
@@ -144,6 +147,8 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Local & Proxy Model Backends](usecases/local-and-proxy-models.md) | Run Hermes against Ollama, vLLM, oMLX, or a custom OpenAI-compatible proxy — for cost control, data locality, or model choice beyond the defaults. |
 | [Local Model Auto-Detection](usecases/local-model-auto-detection.md) | Hermes probes your local inference server, identifies the running model, detects context window, and auto-configures — eliminates first-setup friction for Ollama, llama.cpp, MLX, and vLLM. |
 | [Headless Daemon Server](usecases/headless-daemon-server.md) | A self-managed Linux VPS pattern that runs Hermes gateway and native cron under `systemd` with a dedicated service user and reboot-safe scheduling. |
+| [Hermes + Browser Harness on Hostinger](usecases/hermes-browser-harness-hostinger.md) | A 10-minute copy-paste script (54★ gist) that wires Browser Use's Browser Harness as a Hermes skill on a consumer VPS — symlinked skill, OpenRouter, Browser Use Cloud free tier. |
+| [scicco/hermzner: Hardened Hermes on Hetzner](usecases/scicco-hermzner-hetzner.md) | Terraform + Ansible setup for a Hetzner VPS with rootless Podman, Tailscale-only network, UFW default-deny, read-only root FS, and pinned image digests. Production-grade, `nascent` (3★). |
 
 ## Research & Training
 
