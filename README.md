@@ -58,6 +58,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Intent-to-Artifacts Workflow](usecases/intent-to-artifacts.md) | A personal workflow for turning rough prompts into runbooks, RSS curation, diagrams, and notes — delivered to Telegram + markdown files. |
 | [X Social Automation Toolset](usecases/x-social-automation-toolset.md) | A native Hermes plugin for X/Twitter search, account reads, trend checks, and operator-approved actions through Xquik. |
 | [Inbox → Slack Daily Digest](usecases/inbox-slack-daily-digest.md) | A weekday 9am cron that classifies your inbox and posts a needs-reply / FYI digest to a Slack channel. No auto-replies. |
+| [Sequenzy Email Marketing Agent](usecases/sequenzy-email-marketing-agent.md) | Use Hermes with Sequenzy skills/CLI to draft lifecycle campaigns, manage subscriber workflows, send tests, and monitor email stats. |
 
 ## Messaging & Team Bots
 
