@@ -5,7 +5,7 @@
 # Awesome Hermes Agent Use Cases
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-44-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-49-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/ali-erfan-dev/awesome-hermes-usecases?label=Last%20Update&style=flat-square)
 ![Stars](https://img.shields.io/github/stars/ali-erfan-dev/awesome-hermes-usecases?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
@@ -76,6 +76,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Production Software-Dev Workflow](usecases/production-software-dev-workflow.md) | A field report of daily production development on Hermes — long sessions, delegation, memory, one 12-hour run with ~2.6M replay tokens. |
 | [Local Model Quantization with TurboQuant](usecases/dev-local-model-quantization.md) | Optimize MLX models (Qwen3.5-9B) for local Apple Silicon inference using domain-specific skills — apply, benchmark, document, publish. |
 | [Hermes VS Code Workspace Stream](usecases/hermes-vscode-workspace-stream.md) | A VS Code sidebar over Hermes ACP for streaming chat, tool output, editor context, attached files, model switching, and persistent workspace sessions. |
+| [Function-Calling Patterns](usecases/function-calling-patterns.md) | The `Hermes-Function-Calling` companion repo as a pattern library — yfinance financial data, Pydantic JSON mode, GOAP scratch-pad planning, `@tool` registration, recursive multi-hop via `--max_depth`. |
 
 ## Frontends & UIs
 
@@ -149,6 +150,10 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Headless Daemon Server](usecases/headless-daemon-server.md) | A self-managed Linux VPS pattern that runs Hermes gateway and native cron under `systemd` with a dedicated service user and reboot-safe scheduling. |
 | [Hermes + Browser Harness on Hostinger](usecases/hermes-browser-harness-hostinger.md) | A 10-minute copy-paste script (54★ gist) that wires Browser Use's Browser Harness as a Hermes skill on a consumer VPS — symlinked skill, OpenRouter, Browser Use Cloud free tier. |
 | [scicco/hermzner: Hardened Hermes on Hetzner](usecases/scicco-hermzner-hetzner.md) | Terraform + Ansible setup for a Hetzner VPS with rootless Podman, Tailscale-only network, UFW default-deny, read-only root FS, and pinned image digests. Production-grade, `nascent` (3★). |
+| [Enterprise Cloud (Bedrock / Azure AI Foundry / NVIDIA Build)](usecases/enterprise-cloud-deployment.md) | First-class provider IDs for the three major enterprise model gateways — Bedrock Converse API + Guardrails, Azure Foundry endpoint, NVIDIA NIM cloud or self-hosted. For regulated / procurement-constrained shops. |
+| [China-Region LLM Endpoints](usecases/china-region-llm-endpoints.md) | Dedicated China-facing provider IDs for Kimi/Moonshot, MiniMax, and z.ai/GLM — auto-probing endpoints, no hand-wired base URLs. Pair with Feishu/WeCom for a fully domestic stack. |
+| [Nous Portal Gateway](usecases/nous-portal-gateway.md) | The maintainers' recommended default — one OAuth login unlocks 300+ models plus a Tool Gateway (web search, image gen, TTS, browser) and Nous Chat. Scoped JWTs, no per-provider key juggling. |
+| [Coding-Tool Subscriptions as Backends (Copilot / Codex / Claude Max)](usecases/oauth-cloud-providers.md) | Reuse existing coding-tool subscriptions as Hermes model backends — Copilot direct + ACP, Codex device-code OAuth, Claude Max extra-usage OAuth — with native auth and 401 one-shot recovery. |
 
 ## Research & Training
 
