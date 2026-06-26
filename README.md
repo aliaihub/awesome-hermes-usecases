@@ -5,7 +5,7 @@
 # Awesome Hermes Agent Use Cases
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-49-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-50-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/ali-erfan-dev/awesome-hermes-usecases?label=Last%20Update&style=flat-square)
 ![Stars](https://img.shields.io/github/stars/ali-erfan-dev/awesome-hermes-usecases?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
