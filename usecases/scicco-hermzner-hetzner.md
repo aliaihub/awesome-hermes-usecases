@@ -53,8 +53,8 @@ The repo's `scripts/repo_check.sh` runs local security/consistency checks (secre
    ```
 2. Resolve a pinned digest for `nousresearch/hermes-agent:main`:
    ```bash
-   curl -s "https://hub.docker.com/v2/repositories/nousresearch/hermes-agent/tags/main" \
-     | jq -r '.images[] | select(.architecture == "amd64" and .os == "linux") | .digest'
+   curl -s "https://hub.docker.com/v2/repositories/nousresearch/hermes-agent/tags?page_size=100" \
+     | jq -r '.results[] | select(.name == "main") | .images[] | select(.architecture == "amd64" and .os == "linux") | .digest'
    ```
 3. Set `hermes_image_ref` in `ansible/inventory/group_vars/all.yml` to the digest.
 4. Deploy:
