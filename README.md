@@ -115,6 +115,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Matt Pocock Skills + Sub-Agents](usecases/matt-pocock-skills-subagents.md) | Use Matt Pocock's open-source skills (`/grill-me`, `/to-prd`, `/to-issues`) for planning and scoping, then Hermes sub-agents for parallel implementation of vertical-sliced issues — with HITL gates to stop AI slop before it ships. |
 | [Dynamic Skill Dojo](usecases/dynamic-skill-dojo.md) | A monitoring and improvement loop that reads session history, ranks weak skills, proposes patches or new skills, invokes self-evolution, and reports learning progress. |
 | [Hermes Kanban: Multi-Agent Swarm from Slack](usecases/kanban-multi-agent-swarm.md) | The v0.15 `/kanban` slash command turns a Slack message into a durable multi-agent swarm with named workers, a verifier, and a synthesizer — persistent via `~/.hermes/kanban.db`. |
+| [Deterministic Workflow Delegation](usecases/deterministic-workflow-delegation.md) | Hermes keeps the judgment, a deterministic runner keeps the receipts: repeatable jobs graduate from chat into checked `.nika.yaml` DAG files — audited before any token is spent, budget-capped, with tamper-evident run traces. Offline demo, zero keys. |
 
 ## Memory & Context
 
