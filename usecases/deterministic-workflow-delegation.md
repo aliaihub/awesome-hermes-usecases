@@ -8,6 +8,8 @@ You ask Hermes for the same morning brief, triage pass, or report pipeline — a
 
 ## What It Does
 
+![A repeated chat prompt becomes meeting-actions.nika.yaml; nika check audits it, then a real local run (ollama/llama3.2:3b) writes typed action items](https://raw.githubusercontent.com/supernovae-st/nika/main/media/gifs/chat-to-workflow.optimized.gif)
+
 Hermes keeps the judgment; a deterministic runner keeps the receipts. The repeatable slice of the work graduates from chat into one plain-text `.nika.yaml` file (a small DAG: fetch → summarize → save) that Hermes delegates to via the `nika` skill:
 
 - `nika check` audits the file **before any token is spent** — the plan, an honest cost floor (unpriced work is flagged, never shown as $0), which secrets flow into which task.
@@ -46,6 +48,8 @@ Cap the run at $0.10 with --max-cost-usd.
 ```
 
 ## Runnable Demo (offline · zero keys)
+
+![nika run executes the DAG in parallel waves in the terminal — live lanes, per-task timings, then the verdict card](https://raw.githubusercontent.com/supernovae-st/nika/main/media/gifs/dag-execution.optimized.gif)
 
 ```bash
 nika examples run 01-hello --model mock/echo   # deterministic offline run
