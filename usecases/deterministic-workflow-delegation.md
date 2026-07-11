@@ -62,6 +62,12 @@ nika trace verify .nika/traces/*.ndjson        # exit 0 = chain intact
 - The `nika` skill (taught commands are CI-tested against each released binary before the skill can merge)
 - Optional: Ollama for a real local model (the mock path works with nothing installed)
 
+## Sources
+
+- Integration guide (official docs · commands + config verbatim): https://docs.nika.sh/integrations/hermes
+- The skill pack + read-only MCP oracle (public repo · Hermes named in the skill's architecture): https://github.com/supernovae-st/nika-agents (skills/autonomous-ai-agents/nika/SKILL.md)
+- hermes-agent optional-skill PR (skill-guard SAFE + maintainer review on record): https://github.com/NousResearch/hermes-agent/pull/61632
+
 ## Notes
 
 - The skill passed the hermes-agent skill-guard security scan (it never edits host config and never pipes curl|sh, installs are a human step, by design).
