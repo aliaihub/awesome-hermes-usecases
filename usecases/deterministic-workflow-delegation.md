@@ -54,7 +54,7 @@ Cap the run at $0.10 with --max-cost-usd.
 ```bash
 nika examples run 01-hello --model mock/echo   # deterministic offline run
 nika examples run 01-hello --model ollama/qwen3.5:4b   # same run, real local model
-nika trace verify .nika/traces/*.ndjson        # exit 0 = chain intact
+nika trace verify                              # latest run · exit 0 = chain intact
 ```
 
 ## Skills Needed
