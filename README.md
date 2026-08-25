@@ -141,6 +141,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | --- | --- |
 | [Weather Trading on Polymarket](usecases/weather-trading-polymarket.md) | Autonomous weather prediction-market trading — Kelly Criterion position sizing, EV scoring against market odds, self-calibrating with real traders reporting $300→$123K in 3 months on a $5 VPS. |
 | [ERPClaw: Plain-English ERP and Accounting](usecases/erpclaw-plain-english-erp.md) | Self-hosted double-entry ERP and accounting run from chat. Invoicing, inventory, payroll, and multi-company books, written to a local database by deterministic skill actions. |
+| [First-Dollar Business Guidance](usecases/first-dollar-business-guidance.md) | Hermes Startup: a local-first skill that turns your personal profile into 3 of 10 evidence-labeled ideas, one bounded next action, and a prepaid per-call tool balance — no subscription, no income guarantee. |
 
 ## Deployment Patterns
 
