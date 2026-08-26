@@ -5,7 +5,7 @@
 # Awesome Hermes Agent Use Cases
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-51-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-55-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/ali-erfan-dev/awesome-hermes-usecases?label=Last%20Update&style=flat-square)
 ![Stars](https://img.shields.io/github/stars/ali-erfan-dev/awesome-hermes-usecases?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
@@ -116,6 +116,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Matt Pocock Skills + Sub-Agents](usecases/matt-pocock-skills-subagents.md) | Use Matt Pocock's open-source skills (`/grill-me`, `/to-prd`, `/to-issues`) for planning and scoping, then Hermes sub-agents for parallel implementation of vertical-sliced issues — with HITL gates to stop AI slop before it ships. |
 | [Dynamic Skill Dojo](usecases/dynamic-skill-dojo.md) | A monitoring and improvement loop that reads session history, ranks weak skills, proposes patches or new skills, invokes self-evolution, and reports learning progress. |
 | [Hermes Kanban: Multi-Agent Swarm from Slack](usecases/kanban-multi-agent-swarm.md) | The v0.15 `/kanban` slash command turns a Slack message into a durable multi-agent swarm with named workers, a verifier, and a synthesizer — persistent via `~/.hermes/kanban.db`. |
+| [Deterministic Workflow Delegation](usecases/deterministic-workflow-delegation.md) | Hermes keeps the judgment, a deterministic runner keeps the receipts: repeatable jobs graduate from chat into checked `.nika.yaml` DAG files — audited before any token is spent, budget-capped, with tamper-evident run traces. Offline demo, zero keys. |
 
 ## Memory & Context
 
@@ -141,6 +142,8 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | Name | Description |
 | --- | --- |
 | [Weather Trading on Polymarket](usecases/weather-trading-polymarket.md) | Autonomous weather prediction-market trading — Kelly Criterion position sizing, EV scoring against market odds, self-calibrating with real traders reporting $300→$123K in 3 months on a $5 VPS. |
+| [ERPClaw: Plain-English ERP and Accounting](usecases/erpclaw-plain-english-erp.md) | Self-hosted double-entry ERP and accounting run from chat. Invoicing, inventory, payroll, and multi-company books, written to a local database by deterministic skill actions. |
+| [First-Dollar Business Guidance](usecases/first-dollar-business-guidance.md) | Hermes Startup: a local-first skill that turns your personal profile into 3 of 10 evidence-labeled ideas, one bounded next action, and a prepaid per-call tool balance — no subscription, no income guarantee. |
 
 ## Deployment Patterns
 
@@ -163,6 +166,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | --- | --- |
 | [Multi-Platform Social Media Research](usecases/multi-platform-research.md) | Run a single query across Reddit, X/Twitter, YouTube, Hacker News, and Polymarket via a single Python engine. Firefox-cookie auth for X, no API key needed on WSL. Delivered as a unified markdown brief to Telegram or local storage. |
 | [RL Training & Benchmarks](usecases/rl-training-benchmarks.md) | Use Hermes environments to train and evaluate tool-calling models. The TBLite benchmark covers 100 tasks with strong correlation to TB2. |
+| [ClawBench Browser-Agent Evaluation](usecases/clawbench-browser-agent-evaluation.md) | Run Hermes against isolated live-web tasks with native browser tools over CDP, interception-based scoring, and five-layer traces for debugging. |
 | [Browser & Admin UIs](usecases/browser-admin-uis.md) | The official web dashboard plus community UIs — browser access to sessions, files, cron, and control plane. |
 
 ## Runnable demos
