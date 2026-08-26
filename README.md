@@ -5,7 +5,7 @@
 # Awesome Hermes Agent Use Cases
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-52-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-55-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/ali-erfan-dev/awesome-hermes-usecases?label=Last%20Update&style=flat-square)
 ![Stars](https://img.shields.io/github/stars/ali-erfan-dev/awesome-hermes-usecases?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
@@ -67,6 +67,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Team Telegram Assistant](usecases/team-telegram-assistant.md) | Always-on shared bot for a small team — coding, research, ops — with per-user sessions, Docker-isolated terminal, and an allowlist. The gateway also supports Discord, Slack, WhatsApp, Signal, Matrix, Email, SMS, and more; the Telegram flow is the cleanest starting point for any of them. |
 | [Enterprise Messaging (Feishu / WeCom)](usecases/enterprise-messaging-feishu-wecom.md) | Production-style Hermes deployments on Chinese enterprise chat platforms — Feishu managed under `launchd`, WeCom with native media-and-vision analysis. |
 | [Voice Assistant Workflows](usecases/voice-assistant.md) | Three modes: CLI mic loop, voice notes in Telegram/Discord, and a Discord voice-channel bot. Same agent, same memory, voice-only I/O. |
+| [Hermes Live Voice](usecases/hermes-live-voice.md) | A community voice gateway + Dashboard plugin that keeps a continuous, interruptible voice session open while durable Hermes `/v1/runs` execute in the background — bounded progress, steer/stop by task ID, completion notices after reconnect. |
 
 ## Coding & Developer Workflows
 
