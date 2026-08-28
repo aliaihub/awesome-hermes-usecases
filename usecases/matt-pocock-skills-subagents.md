@@ -52,16 +52,16 @@ Answer the hard questions. If the agent drifts into implementation, tell it to r
 
 This skill also updates `CONTEXT.md` and ADRs inline, building a shared domain language that makes later sub-agent instructions shorter and more precise.
 
-### Step 3: Run Matt's `to-prd` Skill
+### Step 3: Run Matt's `to-spec` Skill
 
 ```
-/to-prd on ~/projectA/big-feature-x.md, create local md PRD not in github
+/to-spec on ~/projectA/big-feature-x.md, create local md spec not in github
 ```
 
-### Step 4: Run Matt's `to-issues` Skill
+### Step 4: Run Matt's `to-tickets` Skill
 
 ```
-/to-issues on ~/projectA/big-feature-x-prd.md, create local md issues not in github
+/to-tickets on ~/projectA/big-feature-x-spec.md, create local md tickets not in github
 ```
 
 ### Step 5: Check the Issue Split Before Running Agents
@@ -118,7 +118,7 @@ Then restart the Hermes session.
 
 ## Primary Sources
 
-- **[mattpocock/skills](https://github.com/mattpocock/skills)** — 45.6k stars, MIT license. Skills used: `grill-me`, `grill-with-docs`, `to-prd`, `to-issues`
+- **[mattpocock/skills](https://github.com/mattpocock/skills)** — 45.6k stars, MIT license. Skills used: `grill-me`, `grill-with-docs`, `to-spec`, `to-tickets`
 - **[mattpocock/sandcastle](https://github.com/mattpocock/sandcastle)** — Pocock's Claude Code runner. Not used here; Hermes sub-agents replace it
 - **Reddit post by Hermes user** (setup/guide category) describing the combo workflow, April 2026, including delegation-limit tweaks and the HITL stop gate
 
