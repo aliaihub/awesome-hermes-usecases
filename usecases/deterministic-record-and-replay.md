@@ -40,14 +40,15 @@ What one turn produced, from the verified run below:
   files it touched, on one timeline with the model calls.
 - `orca replay` reproducing all of it offline.
 
-One Hermes-specific detail worth knowing, because it is the difference between
-a full capture and a confusing half of one. Hermes makes two different kinds
-of HTTP call with two different libraries: the model catalogue with
-`requests`, and the completion with httpx under the OpenAI SDK. httpx pins
-certifi and honours neither `REQUESTS_CA_BUNDLE` nor `SSL_CERT_FILE`; Hermes
-resolves that client's CA itself, from `HERMES_CA_BUNDLE`
-(`agent/ssl_verify.py`). A recorder that does not set that variable captures
-the catalogue read and none of the completions.
+One Hermes detail worth knowing, because it looks like a problem and is not.
+Hermes makes two different kinds of HTTP call with two different libraries:
+the model catalogue through `requests`, and the completion through httpx under
+the OpenAI SDK. httpx pins certifi, so the usual `SSL_CERT_FILE` looks as
+though it cannot reach the call that matters. It does — Hermes resolves that
+client's CA itself, and the chain in `agent/ssl_verify.py` reads
+`HERMES_CA_BUNDLE`, then `SSL_CERT_FILE`, then `REQUESTS_CA_BUNDLE`, then
+`CURL_CA_BUNDLE`. So a recorder that sets the standard variables is trusted by
+both clients with nothing Hermes-specific added.
 
 ## Setup
 
@@ -143,12 +144,13 @@ the socket.
   counts, and the `orca replay` result quoted above. Also documents the
   `OPENAI_BASE_URL` finding, established against a listener with
   `model.base_url` pointed at a dead port.
-- [`packages/adapters/src/hermes.ts`](https://github.com/Continuum-AI-Corp/OrcaReplay/blob/8399fb18773e26e000f548a7f978df5f064b64b0/packages/adapters/src/hermes.ts)
+- [`packages/adapters/src/hermes.ts`](https://github.com/Continuum-AI-Corp/OrcaReplay/blob/54839339ff7ca00c844f47bb043d0c6a85adc9ad/packages/adapters/src/hermes.ts)
   and its recorded contract
-  [`fixtures/harness/hermes.json`](https://github.com/Continuum-AI-Corp/OrcaReplay/blob/8399fb18773e26e000f548a7f978df5f064b64b0/packages/adapters/fixtures/harness/hermes.json),
+  [`fixtures/harness/hermes.json`](https://github.com/Continuum-AI-Corp/OrcaReplay/blob/54839339ff7ca00c844f47bb043d0c6a85adc9ad/packages/adapters/fixtures/harness/hermes.json),
   which carries the date the adapter was last confirmed against a running
   Hermes.
-- [`prompt/HERMES/`](https://github.com/Continuum-AI-Corp/OrcaReplay/tree/8399fb18773e26e000f548a7f978df5f064b64b0/prompt/HERMES)
+- [`prompt/HERMES/`](https://github.com/Continuum-AI-Corp/OrcaReplay/tree/54839339ff7ca00c844f47bb043d0c6a85adc9ad/prompt/HERMES)
   — the captured system prompt as recorded, scrubbed of local paths.
-- `agent/ssl_verify.py` in Hermes itself, for the `HERMES_CA_BUNDLE`
-  resolution order that the setup above depends on.
+- `agent/ssl_verify.py` in Hermes itself, for the CA resolution order quoted
+  above — the reason the standard `SSL_CERT_FILE` is enough and no
+  Hermes-specific variable is needed.
