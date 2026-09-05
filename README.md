@@ -130,6 +130,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | Name | Description |
 | --- | --- |
 | [Hermes Labyrinth Observability](usecases/hermes-labyrinth-observability.md) | A read-only dashboard plugin that turns prompts, tool calls, failures, approvals, model switches, cron runs, and memory hits into auditable agent journeys. |
+| [Deterministic Record and Replay of Hermes Runs](usecases/deterministic-record-and-replay.md) | Records a run at the process and socket boundary, replays it offline byte for byte with the network off, and forks it from any checkpoint onto a different model. Needs no plugin and no change to `config.yaml`. |
 
 ## Security & Assurance
 
