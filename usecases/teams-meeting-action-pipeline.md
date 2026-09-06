@@ -48,9 +48,11 @@ Subscribe to the transcript resource using the source-documented CLI flow:
 ```bash
 hermes teams-pipeline subscribe \
   --resource communications/onlineMeetings/getAllTranscripts \
-  --notification-url https://ops.example.com/msgraph/webhook \
+  --notification-url "$PUBLIC_MS_GRAPH_WEBHOOK_URL" \
   --client-state "$MSGRAPH_WEBHOOK_CLIENT_STATE"
 ```
+
+Set `PUBLIC_MS_GRAPH_WEBHOOK_URL` to the public HTTPS URL ending in `/msgraph/webhook`.
 
 ## Prompts
 
@@ -81,4 +83,3 @@ hermes teams-pipeline maintain-subscriptions
 - Official Teams Meetings documentation: <https://hermes-agent.nousresearch.com/docs/user-guide/messaging/teams-meetings>
 - Official Teams bot documentation: <https://hermes-agent.nousresearch.com/docs/user-guide/messaging/teams>
 - Hermes Agent repository: <https://github.com/NousResearch/hermes-agent>
-

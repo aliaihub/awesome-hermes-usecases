@@ -36,7 +36,7 @@ gateway:
 
 a2a_agents:
   researcher:
-    url: "http://research-box.local:9900"
+    url: "${RESEARCHER_A2A_URL}"
     auth: { type: bearer, token: "replace-me" }
     timeout: 120
     capabilities: [web_search, research]
@@ -49,6 +49,8 @@ hermes tools enable a2a --platform cli
 hermes tools enable a2a --platform a2a
 hermes gateway run
 ```
+
+Set `RESEARCHER_A2A_URL` to the peer's reachable A2A endpoint.
 
 ## Prompts
 
@@ -78,4 +80,3 @@ Its HTTP quick test sends `What tools do you have?` through the A2A `SendMessage
 - Official A2A documentation: <https://hermes-agent.nousresearch.com/docs/user-guide/messaging/a2a>
 - Hermes Agent repository: <https://github.com/NousResearch/hermes-agent>
 - Agent2Agent protocol: <https://a2a-protocol.org/>
-

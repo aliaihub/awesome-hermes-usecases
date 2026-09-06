@@ -28,7 +28,7 @@ curl -fsSL https://raw.githubusercontent.com/TheAiSingularity/hermesclaw/main/sc
 Install OpenShell, start a local model endpoint, and launch the strict policy:
 
 ```bash
-curl -fsSL https://www.nvidia.com/openshell.sh | bash
+curl -LsSf https://raw.githubusercontent.com/NVIDIA/OpenShell/main/install.sh | sh
 
 cd ~/.hermesclaw
 llama-server -m models/your-model.gguf --port 8080 --ctx-size 32768 -ngl 99 &
