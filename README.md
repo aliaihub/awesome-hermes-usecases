@@ -5,7 +5,7 @@
 # Awesome Hermes Agent Use Cases
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-55-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-67-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/ali-erfan-dev/awesome-hermes-usecases?label=Last%20Update&style=flat-square)
 ![Stars](https://img.shields.io/github/stars/ali-erfan-dev/awesome-hermes-usecases?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
@@ -59,6 +59,8 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [X Social Automation Toolset](usecases/x-social-automation-toolset.md) | A native Hermes plugin for X/Twitter search, account reads, trend checks, and operator-approved actions through Xquik. |
 | [Inbox → Slack Daily Digest](usecases/inbox-slack-daily-digest.md) | A weekday 9am cron that classifies your inbox and posts a needs-reply / FYI digest to a Slack channel. No auto-replies. |
 | [Sequenzy Email Marketing Agent](usecases/sequenzy-email-marketing-agent.md) | Use Hermes with Sequenzy skills/CLI to draft lifecycle campaigns, manage subscriber workflows, send tests, and monitor email stats. |
+| [Microsoft Teams Meeting → Action Pipeline](usecases/teams-meeting-action-pipeline.md) | Ingest Microsoft Graph meeting events, prefer transcripts, fall back to recording plus STT, and deliver durable summaries to Teams, Notion, or Linear. |
+| [Self-Hosted Nextcloud Workspace Assistant](usecases/nextcloud-workspace-assistant.md) | Manage Nextcloud files, notes, calendars, tasks, and contacts from Hermes through WebDAV, CalDAV, CardDAV, and the Notes API. |
 
 ## Messaging & Team Bots
 
@@ -117,6 +119,9 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Dynamic Skill Dojo](usecases/dynamic-skill-dojo.md) | A monitoring and improvement loop that reads session history, ranks weak skills, proposes patches or new skills, invokes self-evolution, and reports learning progress. |
 | [Hermes Kanban: Multi-Agent Swarm from Slack](usecases/kanban-multi-agent-swarm.md) | The v0.15 `/kanban` slash command turns a Slack message into a durable multi-agent swarm with named workers, a verifier, and a synthesizer — persistent via `~/.hermes/kanban.db`. |
 | [Deterministic Workflow Delegation](usecases/deterministic-workflow-delegation.md) | Hermes keeps the judgment, a deterministic runner keeps the receipts: repeatable jobs graduate from chat into checked `.nika.yaml` DAG files — audited before any token is spent, budget-capped, with tamper-evident run traces. Offline demo, zero keys. |
+| [Native A2A Agent Collaboration](usecases/native-a2a-agent-collaboration.md) | Discover and call specialist agents across machines or frameworks, or expose Hermes as an authenticated A2A service with streaming, audit logs, and anti-loop controls. |
+| [Per-Project Scoped Hermes Agents](usecases/per-project-scoped-hermes-agents.md) | Ankh.md gives each project folder its own Hermes identity, config, skills, sessions, and memory while preserving the default global agent elsewhere. |
+| [Competing Autonomous AI Companies](usecases/competing-autonomous-ai-companies.md) | Run two Paperclip companies with Hermes workers against identical tasks, then compare execution evidence and transfer learned skills across teams. |
 
 ## Memory & Context
 
@@ -124,6 +129,8 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | --- | --- |
 | [YantrikDB Cognitive Memory (via MCP)](usecases/yantrikdb-memory-mcp.md) | Replace or augment native memory with a dedicated cognitive DB — vector + knowledge graph + temporal decay + contradiction detection. Integrates over MCP, so no Hermes plugin needed. |
 | [Obsidian Vault as a Second Brain](usecases/obsidian-second-brain.md) | Wire Hermes into an Obsidian vault for persistent knowledge — read notes, create daily dashboards, cross-reference tags, maintain a self-improving personal knowledge base. |
+| [Hermes Memory OS](usecases/hermes-memory-os.md) | A seven-layer local memory stack with session search, trusted facts, hybrid vector retrieval, automatic extraction, a self-curating wiki, and ground-truth rules. |
+| [Quantified-Self Life OS](usecases/quantified-self-life-os.md) | Track personal routines and wellness signals, detect evidence-bounded correlations, and deliver scheduled morning, evening, and weekly reflections. |
 
 ## Observability & Operations
 
@@ -131,12 +138,15 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | --- | --- |
 | [Hermes Labyrinth Observability](usecases/hermes-labyrinth-observability.md) | A read-only dashboard plugin that turns prompts, tool calls, failures, approvals, model switches, cron runs, and memory hits into auditable agent journeys. |
 | [Deterministic Record and Replay of Hermes Runs](usecases/deterministic-record-and-replay.md) | Records a run at the process and socket boundary, replays it offline byte for byte with the network off, and forks it from any checkpoint onto a different model. Needs no plugin and no change to `config.yaml`. |
+| [Autonomous SRE Incident Commander](usecases/autonomous-sre-incident-commander.md) | Detect, triage, diagnose, safely remediate, verify, document, and learn from Linux, Docker, or Kubernetes incidents. |
+| [Local API Trace Debugging](usecases/local-api-trace-debugging.md) | Run Hermes through claude-tap to inspect provider requests, prompts, tools, streaming responses, token usage, and request diffs in a local viewer. |
 
 ## Security & Assurance
 
 | Name | Description |
 | --- | --- |
 | [Autonomous Penetration Testing with Kali](usecases/autonomous-penetration-testing.md) | A Kali-backed Hermes skill for authorized security assessments with scope confirmation, playbooks, zero-findings fallback, approval gates, and structured reports. |
+| [Sandboxed Hermes with NVIDIA OpenShell](usecases/hermes-openshell-sandbox.md) | Run Hermes behind out-of-process network, filesystem, syscall, and inference policies while retaining approved memory, skills, cron, and gateway capabilities. |
 
 ## Finance & Trading
 
@@ -160,6 +170,8 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [China-Region LLM Endpoints](usecases/china-region-llm-endpoints.md) | Dedicated China-facing provider IDs for Kimi/Moonshot, MiniMax, and z.ai/GLM — auto-probing endpoints, no hand-wired base URLs. Pair with Feishu/WeCom for a fully domestic stack. |
 | [Nous Portal Gateway](usecases/nous-portal-gateway.md) | The maintainers' recommended default — one OAuth login unlocks 300+ models plus a Tool Gateway (web search, image gen, TTS, browser) and Nous Chat. Scoped JWTs, no per-provider key juggling. |
 | [Coding-Tool Subscriptions as Backends (Copilot / Codex / Claude Max)](usecases/oauth-cloud-providers.md) | Reuse existing coding-tool subscriptions as Hermes model backends — Copilot direct + ACP, Codex device-code OAuth, Claude Max extra-usage OAuth — with native auth and 401 one-shot recovery. |
+| [Integrated Self-Hosted Hermes Stack](usecases/integrated-self-hosted-hermes-stack.md) | Bootstrap Hermes with model routing, local inference, search, vector memory, automation, notifications, observability, and monitoring through a tiered Docker stack. |
+| [Persistent Hermes on Hugging Face Spaces](usecases/hermes-on-hugging-face-spaces.md) | Deploy Hermes as a Space with a web dashboard and messaging gateway, synchronizing durable agent state to a private Hugging Face Dataset. |
 
 ## Research & Training
 
