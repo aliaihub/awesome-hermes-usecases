@@ -51,6 +51,8 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 
 ## Automation & Scheduling
 
+- [Clickyy](https://github.com/jayamitkatariya/clickyyy) - Shake your cursor to summon an AI agent that sees your screen and clicks, types, drags, and acts for you on macOS. Open-source, MIT.
+
 | Name | Description |
 | --- | --- |
 | [Daily Briefing Bot](usecases/daily-briefing-bot.md) | A scheduled agent that researches topics every morning and delivers a summary to Telegram or Discord. The canonical "hello world" of Hermes automation. |
