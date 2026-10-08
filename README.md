@@ -86,6 +86,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 
 | Name | Description |
 | --- | --- |
+| [Hermes Dialog App — Native Android Client](usecases/hermes-dialog-app-android-client.md) | A self-hosted Android chat client (Kotlin + Compose) for your own gateway — SSE streaming, voice, file transfer, scheduled jobs, multi-profile, in-app updates. |
 | [Open WebUI Frontend](usecases/open-webui-frontend.md) | Point Open WebUI at the Hermes API server to get a full browser chat frontend for the agent, with session continuity. |
 | [TUI Operator Console](usecases/tui-operator-console.md) | Keyboard-first terminal HUD for managing your agent — live sessions, skills toggle, cron, logs, config editing, multiple themes. |
 
