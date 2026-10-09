@@ -5,7 +5,7 @@
 # Awesome Hermes Agent Use Cases
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-67-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-77-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/ali-erfan-dev/awesome-hermes-usecases?label=Last%20Update&style=flat-square)
 ![Stars](https://img.shields.io/github/stars/ali-erfan-dev/awesome-hermes-usecases?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
@@ -36,6 +36,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 ## Categories
 
 - [Automation & Scheduling](#automation--scheduling)
+- [Business Operations](#business-operations)
 - [Messaging & Team Bots](#messaging--team-bots)
 - [Coding & Developer Workflows](#coding--developer-workflows)
 - [Frontends & UIs](#frontends--uis)
@@ -62,6 +63,14 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Microsoft Teams Meeting → Action Pipeline](usecases/teams-meeting-action-pipeline.md) | Ingest Microsoft Graph meeting events, prefer transcripts, fall back to recording plus STT, and deliver durable summaries to Teams, Notion, or Linear. |
 | [Self-Hosted Nextcloud Workspace Assistant](usecases/nextcloud-workspace-assistant.md) | Manage Nextcloud files, notes, calendars, tasks, and contacts from Hermes through WebDAV, CalDAV, CardDAV, and the Notes API. |
 
+## Business Operations
+
+| Name | Description |
+| --- | --- |
+| [Service-Business Lead → Estimate → Payment](usecases/service-business-lead-to-payment.md) | Public Hermes skills for a service-job pipeline: qualify, price from a rate card, review in Telegram, create a Stripe test payment link, draft email, and update a SQLite CRM. QuickBooks is not wired in the reference flow. |
+| [Lead Research → YouTrack Briefs](usecases/lead-research-youtrack.md) | A three-person agency's documented workflow turns prospect research into YouTrack tickets with company profiles, operational problems, contact recommendations, and lead priorities. |
+| [Box Hub → Cited Customer-Renewal Brief](usecases/box-renewal-copilot.md) | Box's official Hermes demo analyzes approved Hub documents through Box AI, prepares a cited renewal briefing, and saves reviewed work as a verified Box Note. Uses fictional sample data. |
+
 ## Messaging & Team Bots
 
 | Name | Description |
@@ -81,6 +90,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Local Model Quantization with TurboQuant](usecases/dev-local-model-quantization.md) | Optimize MLX models (Qwen3.5-9B) for local Apple Silicon inference using domain-specific skills — apply, benchmark, document, publish. |
 | [Hermes VS Code Workspace Stream](usecases/hermes-vscode-workspace-stream.md) | A VS Code sidebar over Hermes ACP for streaming chat, tool output, editor context, attached files, model switching, and persistent workspace sessions. |
 | [Function-Calling Patterns](usecases/function-calling-patterns.md) | The `Hermes-Function-Calling` companion repo as a pattern library — yfinance financial data, Pydantic JSON mode, GOAP scratch-pad planning, `@tool` registration, recursive multi-hop via `--max_depth`. |
+| [Large-Spec Retrieval and Spec-to-Code Evidence](usecases/document-structuring-spec-to-code.md) | A Hermes-compatible `doc-str` skill indexes large PDF/DOCX specs and firmware symbols in SQLite, then retrieves citable chunks through TOC-first navigation, FTS5, and optional hybrid search. |
 
 ## Frontends & UIs
 
@@ -107,6 +117,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Screen Recording → Tutorial Video](usecases/creative-screen-recording-video.md) | Feed Hermes a raw screen recording and get a finished tutorial video on HeyGen with your AI avatar — script generation, video production, and memory of preferences for repeat work. |
 | [ComfyUI Workflow Orchestration](usecases/comfyui-workflow-orchestration.md) | Install, launch, and run ComfyUI node-based media generation workflows on demand — from Stable Diffusion to video pipelines, with automatic custom-node installation and deterministic output management. |
 | [AI Video Generation: HTML-to-MP4](usecases/video-generation-html-to-mp4.md) | Hermes writes designed HTML compositions (via Open Design), then renders to MP4 via HyperFrames — GSAP animations, shader transitions, TTS narration, all code-driven with no timeline editor. |
+| [Translation with Back-Translation Checks](usecases/translation-backcheck-plugin.md) | A first-party reference plugin runs translation and classification concurrently, then back-translates for a heuristic quality check through the host's async LLM API. |
 
 ## Orchestration & Multi-Agent
 
@@ -147,6 +158,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | --- | --- |
 | [Autonomous Penetration Testing with Kali](usecases/autonomous-penetration-testing.md) | A Kali-backed Hermes skill for authorized security assessments with scope confirmation, playbooks, zero-findings fallback, approval gates, and structured reports. |
 | [Sandboxed Hermes with NVIDIA OpenShell](usecases/hermes-openshell-sandbox.md) | Run Hermes behind out-of-process network, filesystem, syscall, and inference policies while retaining approved memory, skills, cron, and gateway capabilities. |
+| [Mask Sensitive Numbers in Stored Final Replies](usecases/final-response-pii-redaction.md) | A first-party output-hook demo masks selected US SSN and card-number formats in final stored replies. Raw CLI streaming can precede the filter; this is not comprehensive DLP. |
 
 ## Finance & Trading
 
@@ -155,6 +167,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Weather Trading on Polymarket](usecases/weather-trading-polymarket.md) | Autonomous weather prediction-market trading — Kelly Criterion position sizing, EV scoring against market odds, self-calibrating with real traders reporting $300→$123K in 3 months on a $5 VPS. |
 | [ERPClaw: Plain-English ERP and Accounting](usecases/erpclaw-plain-english-erp.md) | Self-hosted double-entry ERP and accounting run from chat. Invoicing, inventory, payroll, and multi-company books, written to a local database by deterministic skill actions. |
 | [First-Dollar Business Guidance](usecases/first-dollar-business-guidance.md) | Hermes Startup: a local-first skill that turns your personal profile into 3 of 10 evidence-labeled ideas, one bounded next action, and a prepaid per-call tool balance — no subscription, no income guarantee. |
+| [Receipt Text or Image → Structured JSON](usecases/receipt-to-structured-json.md) | A first-party `/receipt-extract` plugin turns a local receipt into vendor, total, currency, and tag fields using host-owned structured LLM access. |
 
 ## Deployment Patterns
 
@@ -172,6 +185,8 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Coding-Tool Subscriptions as Backends (Copilot / Codex / Claude Max)](usecases/oauth-cloud-providers.md) | Reuse existing coding-tool subscriptions as Hermes model backends — Copilot direct + ACP, Codex device-code OAuth, Claude Max extra-usage OAuth — with native auth and 401 one-shot recovery. |
 | [Integrated Self-Hosted Hermes Stack](usecases/integrated-self-hosted-hermes-stack.md) | Bootstrap Hermes with model routing, local inference, search, vector memory, automation, notifications, observability, and monitoring through a tiered Docker stack. |
 | [Persistent Hermes on Hugging Face Spaces](usecases/hermes-on-hugging-face-spaces.md) | Deploy Hermes as a Space with a web dashboard and messaging gateway, synchronizing durable agent state to a private Hugging Face Dataset. |
+| [Declarative Hermes Agents on Kubernetes](usecases/kubernetes-declarative-agent-fleet.md) | A community operator reconciles agent config, skills, schedules, workspace content, and storage from reviewable Kubernetes custom resources. |
+| [Razorpay: Isolated, Always-On Employee Agents](usecases/razorpay-isolated-employee-agents.md) | A first-person engineering report of 220+ employee Hermes agents with per-user namespaces, encrypted storage, identity checks, and screened, attributable egress. Deployment code is private. |
 
 ## Research & Training
 
