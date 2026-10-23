@@ -1,5 +1,16 @@
 # Razorpay: Isolated, Always-On Employee Agents
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#hosting--model-providers) · **Hosting & Model Providers**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A production account of isolated employee agents with controlled, attributable network access. |
+| **Requires** | Kubernetes; organizational identity, storage, model gateway, and egress controls; private deployment code. |
+| **Available** | Case study |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Independent deployment · **Confidence:** Medium-High · **Demo status:** Production case study; private deployment code
 
 ## Pain Point

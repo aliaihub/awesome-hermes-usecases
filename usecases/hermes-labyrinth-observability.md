@@ -1,5 +1,16 @@
 # Hermes Labyrinth Observability
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#observability--evaluation) · **Observability & Evaluation**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Agent journeys reconstructed from prompts, tools, approvals, failures, and memory activity. |
+| **Requires** | Hermes Dashboard; plugin directory access; local Hermes activity and state. |
+| **Available** | Plugin |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Observability plugin · **Confidence:** High · **Demo status:** Public dashboard plugin and live demo
 
 ## Pain Point

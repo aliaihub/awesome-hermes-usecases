@@ -1,5 +1,16 @@
 # Hermes Live Voice
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#interfaces--integrations) · **Interfaces & Integrations**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Interruptible voice sessions with durable background tasks and reconnect completion notices. |
+| **Requires** | Hermes Dashboard and durable runs; hermes-live-voice package; supported voice provider. |
+| **Available** | Plugin |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration
 **Confidence:** Medium-High
 **Demo status:** Docs + runbook

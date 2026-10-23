@@ -1,5 +1,16 @@
 # ERPClaw: Plain-English ERP and Accounting
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#business--administration) · **Business & Administration**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Invoices, inventory, payroll, and double-entry books through deterministic skill actions. |
+| **Requires** | ERPClaw skill; Python 3 and Git; SQLite or PostgreSQL. |
+| **Available** | Skill |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration
 **Confidence:** Medium
 **Demo status:** Runnable

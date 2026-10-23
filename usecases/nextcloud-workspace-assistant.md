@@ -1,5 +1,16 @@
 # Self-Hosted Nextcloud Workspace Assistant
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#personal-productivity) · **Personal Productivity**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Conversational access to self-hosted files, notes, calendars, tasks, and contacts. |
+| **Requires** | hermes-nextcloud; Python 3.8+; Nextcloud instance and app password. |
+| **Available** | Skill |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration · **Confidence:** Medium-High · **Demo status:** Runnable Hermes skill
 
 ## Pain Point
@@ -65,4 +76,3 @@ Show my Nextcloud calendar events and tasks for this week. Do not change anythin
 
 - hermes-nextcloud repository: <https://github.com/adnw-vinc/hermes-nextcloud>
 - Hermes Agent repository: <https://github.com/NousResearch/hermes-agent>
-

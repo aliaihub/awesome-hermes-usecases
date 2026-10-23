@@ -1,5 +1,16 @@
 # Browser Demonstration → Reusable Hermes Skill
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#orchestration--agent-memory) · **Orchestration & Agent Memory**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A recorded browser demonstration converted into a replayable Hermes skill. |
+| **Requires** | workflow-record Labs plugin; Chromium CDP access; replay skill and /learn. |
+| **Available** | Plugin |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Official companion (unsupported Labs plugin) · **Confidence:** Medium-High · **Demo status:** Public plugin + runbook; not executed for this catalog update
 
 ## Pain Point

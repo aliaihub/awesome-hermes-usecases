@@ -1,5 +1,16 @@
 # Home Assistant Control
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#home--devices) · **Home & Devices**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Conversational entity lookup, state reads, and service calls for a smart home. |
+| **Requires** | Home Assistant instance and access token; built-in Home Assistant tools. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Official integration · **Confidence:** High · **Demo status:** Docs + runbook
 
 ## Pain Point

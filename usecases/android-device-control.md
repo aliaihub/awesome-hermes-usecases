@@ -1,5 +1,16 @@
 # Android Device Control
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#home--devices) · **Home & Devices**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Remote taps, swipes, screenshots, and screen reading from a Hermes conversation. |
+| **Requires** | Android relay app and accessibility permission; Hermes plugin; reachable relay. |
+| **Available** | Plugin |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration · **Confidence:** Medium-High · **Demo status:** Community repo
 
 ## Pain Point

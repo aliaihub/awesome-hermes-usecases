@@ -1,5 +1,16 @@
 # Box Hub → Cited Customer-Renewal Brief
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#business--administration) · **Business & Administration**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Cited customer-renewal briefs from approved Box Hub documents. |
+| **Requires** | Box CLI and OAuth; Box Hubs and Box AI access. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Official integration · **Confidence:** High · **Demo status:** Docs + runbook with fictional sample data
 
 ## Pain Point

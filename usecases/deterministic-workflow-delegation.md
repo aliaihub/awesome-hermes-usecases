@@ -1,5 +1,16 @@
 # Deterministic Delegation: Repeatable Jobs as Checked Workflow Files
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#orchestration--agent-memory) · **Orchestration & Agent Memory**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Repeatable jobs moved into checked workflow files with budgets and execution traces. |
+| **Requires** | Nika skill and runner; included mock path; optional Ollama for live inference. |
+| **Available** | Skill |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** First-party integration · **Confidence:** High · **Demo status:** Runnable (offline, no keys)
 
 ## Pain Point

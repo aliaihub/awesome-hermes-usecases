@@ -1,5 +1,16 @@
 # Self-Evolution
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#orchestration--agent-memory) · **Orchestration & Agent Memory**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | An evaluation-driven loop for optimizing skills, prompts, and tool descriptions. |
+| **Requires** | Hermes repo; skill evaluation set; configured LLM provider. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Official companion · **Confidence:** High · **Demo status:** Companion repo
 
 ## Pain Point

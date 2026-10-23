@@ -1,5 +1,16 @@
 # Hermes Memory OS
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#orchestration--agent-memory) · **Orchestration & Agent Memory**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Layered session search, trusted facts, hybrid retrieval, extraction, and a self-curating wiki. |
+| **Requires** | Hermes hooks; Docker and Python 3.11+; Qdrant, Redis, ARQ, and SQLite. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration · **Confidence:** High · **Demo status:** Runnable local stack
 
 ## Pain Point
@@ -57,4 +68,3 @@ The expected behavior is retrieval from existing memory, not re-investigation wi
 
 - Memory OS repository: <https://github.com/ClaudioDrews/memory-os>
 - Hermes Agent repository: <https://github.com/NousResearch/hermes-agent>
-

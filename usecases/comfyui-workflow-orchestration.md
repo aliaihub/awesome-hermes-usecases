@@ -1,5 +1,16 @@
 # ComfyUI Workflow Orchestration
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#content--marketing) · **Content & Marketing**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Node-based image and video generation workflows launched and managed through Hermes. |
+| **Requires** | ComfyUI and PyTorch environment; models and disk space; GPU recommended. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 | **Aspect** | **Detail** |
 |---|---|
 | **Category** | Creative / Media Generation |

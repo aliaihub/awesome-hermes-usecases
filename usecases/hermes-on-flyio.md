@@ -1,5 +1,16 @@
 # Hermes on Fly.io
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#hosting--model-providers) · **Hosting & Model Providers**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A Fly Machine deployment with persistent agent state and volume snapshots. |
+| **Requires** | Fly.io account and flyctl; model credential; optional messaging gateway credential. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration · **Confidence:** High · **Demo status:** Official Fly-apps repo
 
 ## Pain Point

@@ -1,5 +1,16 @@
 # Autonomous Penetration Testing with Kali
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#infrastructure--security) · **Infrastructure & Security**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A scoped security-assessment workflow with approval gates and structured reports. |
+| **Requires** | kali-pentest skill; Kali environment; authorized scope and human approval process. |
+| **Available** | Skill |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Security skill · **Confidence:** High · **Demo status:** Public skill repository with simulated demo
 
 ## Pain Point

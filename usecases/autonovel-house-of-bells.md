@@ -1,5 +1,16 @@
 # Autonovel — House of Bells
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#content--marketing) · **Content & Marketing**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A published example of a novel, artwork, audiobook, and website production pipeline. |
+| **Requires** | Autonovel repo and uv; Anthropic API; optional FAL and ElevenLabs accounts. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Official production · **Confidence:** High · **Demo status:** Full pipeline repo
 
 ## Pain Point

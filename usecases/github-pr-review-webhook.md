@@ -1,5 +1,16 @@
 # GitHub PR Review (webhook)
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#coding--engineering) · **Coding & Engineering**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Pull-request reviews triggered by signed GitHub webhook events. |
+| **Requires** | Authenticated gh CLI; review skill; signed webhook route with public HTTPS. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** First-party demo · **Confidence:** High · **Demo status:** Docs + runbook
 
 ## Pain Point

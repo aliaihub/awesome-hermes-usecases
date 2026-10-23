@@ -1,5 +1,16 @@
 # Intent-to-Artifacts Workflow
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#personal-productivity) · **Personal Productivity**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Rough requests turned into runbooks, curated feeds, diagrams, and persistent notes. |
+| **Requires** | Terminal/file and research tools; notes folder; Telegram for delivery pings. |
+| **Available** | Case study |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Independent deployment · **Confidence:** Medium · **Demo status:** Blog-based pattern
 
 ## Pain Point

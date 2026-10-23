@@ -1,5 +1,16 @@
 # Open WebUI Frontend
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#interfaces--integrations) · **Interfaces & Integrations**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A browser chat interface connected to the Hermes API server. |
+| **Requires** | Hermes API server and API key; Docker Compose; configured model provider. |
+| **Available** | Local demo |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Official integration · **Confidence:** High · **Demo status:** [Runnable](../demos/openwebui/)
 
 ## Pain Point

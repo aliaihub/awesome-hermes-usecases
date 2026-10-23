@@ -1,5 +1,16 @@
 # Hermes Conversations and Tools for External MCP Clients
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#interfaces--integrations) · **Interfaces & Integrations**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Conversation history, message events, gateway sending, and opt-in tools for MCP clients. |
+| **Requires** | mcp-serve plugin; external stdio MCP client; optional gateway and tool-provider configuration. |
+| **Available** | Plugin |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Official integration · **Confidence:** High · **Demo status:** Public plugin + runbook; not executed for this catalog update
 
 ## Pain Point

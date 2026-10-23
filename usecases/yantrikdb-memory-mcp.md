@@ -1,5 +1,16 @@
 # YantrikDB Cognitive Memory (via MCP)
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#orchestration--agent-memory) · **Orchestration & Agent Memory**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Persistent cognitive memory with vector, graph, temporal, and contradiction-aware retrieval. |
+| **Requires** | Hermes MCP support; Python and yantrikdb-mcp; optional SSE host. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration · **Confidence:** Medium-High · **Demo status:** MCP server + install guide
 
 ## Pain Point

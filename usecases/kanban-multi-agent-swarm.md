@@ -1,5 +1,16 @@
 # Hermes Kanban: Multi-Agent Swarm from Slack
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#orchestration--agent-memory) · **Orchestration & Agent Memory**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A chat request turned into persistent worker, verifier, and synthesizer tasks. |
+| **Requires** | Hermes with kanban support; messaging gateway; model capacity for parallel agents. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** First-party feature · **Confidence:** High · **Demo status:** First-party docs + tutorial
 
 ## Pain Point

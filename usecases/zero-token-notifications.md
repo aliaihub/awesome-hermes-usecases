@@ -1,5 +1,16 @@
 # Zero-Token Notifications
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#personal-productivity) · **Personal Productivity**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Script-based change detection that calls the model only when there is a signal. |
+| **Requires** | Hermes cron with script support; checker script; messaging destination. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration · **Confidence:** Medium · **Demo status:** Community repo
 
 ## Pain Point

@@ -1,5 +1,16 @@
 # China-Region LLM Endpoints (Kimi/Moonshot, MiniMax, z.ai/GLM)
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#hosting--model-providers) · **Hosting & Model Providers**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Provider configuration for Moonshot, MiniMax, and z.ai model services. |
+| **Requires** | API keys for the selected providers; network access to their endpoints. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Official integration · **Confidence:** High · **Demo status:** Config patterns
 
 ## Pain Point

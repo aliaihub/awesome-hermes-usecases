@@ -1,5 +1,16 @@
 # Persistent Hermes on Hugging Face Spaces
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#hosting--model-providers) · **Hosting & Model Providers**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A hosted dashboard and gateway with state synchronized to a private Dataset. |
+| **Requires** | Hugging Face Space, private Dataset, and write token; model credential. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration · **Confidence:** Medium-High · **Demo status:** One-click Space template + Docker deployment
 
 ## Pain Point

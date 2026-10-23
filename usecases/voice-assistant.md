@@ -1,5 +1,16 @@
 # Voice Assistant Workflows
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#interfaces--integrations) · **Interfaces & Integrations**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | CLI microphone conversations, messaging voice notes, and Discord voice interactions. |
+| **Requires** | Voice toolset; transcription and TTS providers; gateway for messaging modes. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** First-party demo · **Confidence:** High · **Demo status:** Docs + runbook
 
 ## Pain Point

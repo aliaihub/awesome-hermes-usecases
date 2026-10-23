@@ -1,5 +1,16 @@
 # Microsoft Teams Meeting to Action Pipeline
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#business--administration) · **Business & Administration**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Meeting transcripts turned into durable summaries in Teams, Notion, or Linear. |
+| **Requires** | teams_pipeline; Microsoft Graph app permissions; HTTPS webhook; configured destination. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Official integration · **Confidence:** High · **Demo status:** Docs + operator runbook
 
 ## Pain Point

@@ -1,5 +1,16 @@
 # Competing Autonomous AI Companies
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#orchestration--agent-memory) · **Orchestration & Agent Memory**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Two Paperclip teams compared on shared tasks, execution evidence, and skill transfer. |
+| **Requires** | Hermes and adapter; Paperclip/PostgreSQL; Python and Node.js; dashboard and watcher. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Independent deployment · **Confidence:** Medium-High · **Demo status:** Runnable hackathon demonstration
 
 ## Pain Point
@@ -54,4 +65,3 @@ Use the supplied task set so both companies receive the same work and the compar
 - Gladiator repository: <https://github.com/runtimenoteslabs/gladiator>
 - Hermes Agent repository: <https://github.com/NousResearch/hermes-agent>
 - Paperclip repository: <https://github.com/paperclipai/paperclip>
-

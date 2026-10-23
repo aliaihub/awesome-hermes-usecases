@@ -1,5 +1,16 @@
 # Function-Calling Patterns (Hermes-Function-Calling)
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#coding--engineering) · **Coding & Engineering**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Examples of tool registration, structured output, and recursive multi-step planning. |
+| **Requires** | Hermes function-calling model and runtime; example-specific Python dependencies. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Official companion · **Confidence:** High · **Demo status:** Companion repo
 
 ## Pain Point

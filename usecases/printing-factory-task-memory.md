@@ -1,5 +1,16 @@
 # Printing-Factory Task Memory
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#business--administration) · **Business & Administration**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Retrieval of previous tasks and decisions during daily factory operations. |
+| **Requires** | Custom memory skill; local JSON index and retrieval hooks. |
+| **Available** | Case study |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Independent deployment · **Confidence:** Medium-High · **Demo status:** Custom skill + case study
 
 ## Pain Point

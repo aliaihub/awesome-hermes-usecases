@@ -1,5 +1,16 @@
 # Browser & Admin UIs
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#interfaces--integrations) · **Interfaces & Integrations**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A comparison of official and community browser interfaces for agent operations. |
+| **Requires** | Hermes API server; UI-specific dependencies; TLS for external access. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration · **Confidence:** Medium · **Demo status:** Multiple UIs, uneven maturity
 
 ## Pain Point

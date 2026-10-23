@@ -1,5 +1,16 @@
 # Headless Daemon Server
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#hosting--model-providers) · **Hosting & Model Providers**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A supervised Linux gateway with reboot-safe scheduling and dedicated service identity. |
+| **Requires** | Linux VPS with systemd; Hermes and provider authentication; gateway configuration. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Deployment pattern · **Confidence:** High · **Demo status:** Public deployment guide
 
 ## Pain Point

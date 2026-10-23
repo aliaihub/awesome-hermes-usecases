@@ -1,5 +1,16 @@
 # Service-Business Lead → Estimate → Payment
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#business--administration) · **Business & Administration**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A service-job pipeline covering qualification, estimates, reviewed payments, email, and CRM updates. |
+| **Requires** | Reference business skills; Telegram; Himalaya email CLI; Stripe test credentials. |
+| **Available** | Skill |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Independent deployment · **Confidence:** Medium-High · **Demo status:** Public reference skills + case study
 
 ## Pain Point

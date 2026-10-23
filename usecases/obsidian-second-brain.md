@@ -1,5 +1,16 @@
 # Memory: Obsidian Vault as a Second Brain
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#knowledge--research) · **Knowledge & Research**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Persistent research notes, daily dashboards, and connected knowledge in an Obsidian vault. |
+| **Requires** | Obsidian vault; Obsidian skill and file tools; optional research integrations. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Community pattern · **Confidence:** Medium-High · **Demo status:** Verified integrations
 
 ## Pain Point

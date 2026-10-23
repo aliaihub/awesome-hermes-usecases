@@ -1,5 +1,16 @@
 # Multi-Platform Social Media Research (last30days)
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#knowledge--research) · **Knowledge & Research**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A unified brief from Reddit, X, YouTube, Hacker News, and prediction-market research. |
+| **Requires** | last30days Python engine; web search; optional platform auth and delivery gateway. |
+| **Available** | Skill |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Independent deployment · **Confidence:** Medium-High · **Demo status:** Custom skill + runbook
 
 ## Pain Point

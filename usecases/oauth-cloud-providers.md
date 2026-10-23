@@ -1,5 +1,16 @@
 # Reusing Coding-Tool Subscriptions as Hermes Backends (Copilot / Codex / Claude Max)
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#hosting--model-providers) · **Hosting & Model Providers**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Authentication patterns for supported Copilot, Codex, and Claude subscription backends. |
+| **Requires** | Eligible coding-tool account; provider-specific OAuth or CLI setup; any required extra usage. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Official integration · **Confidence:** High · **Demo status:** Config patterns
 
 ## Pain Point

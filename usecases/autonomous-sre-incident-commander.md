@@ -1,5 +1,16 @@
 # Autonomous SRE Incident Commander
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#infrastructure--security) · **Infrastructure & Security**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Incident detection, diagnosis, reviewed remediation, verification, and operational learning. |
+| **Requires** | incident-commander skill; monitored host access; Hermes cron and alert gateway. |
+| **Available** | Skill |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Independent deployment · **Confidence:** High · **Demo status:** Runnable demo + tested watchdog
 
 ## Pain Point
@@ -67,4 +78,3 @@ on Telegram if anything is P0 or P1. Send me a daily briefing at 08:00.
 
 - Incident Commander repository: <https://github.com/Lethe044/hermes-incident-commander>
 - Hermes Agent repository: <https://github.com/NousResearch/hermes-agent>
-

@@ -1,5 +1,16 @@
 # GitHub PR Review (cron)
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#coding--engineering) · **Coding & Engineering**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Periodic pull-request review and digests without a public webhook endpoint. |
+| **Requires** | Authenticated gh CLI; review skill; Hermes cron and delivery gateway. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** First-party demo · **Confidence:** High · **Demo status:** Docs + runbook
 
 ## Pain Point

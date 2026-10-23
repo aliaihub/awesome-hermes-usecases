@@ -1,5 +1,16 @@
 # Nous Portal Gateway (Single-OAuth, 300+ Models + Tool Gateway)
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#hosting--model-providers) · **Hosting & Model Providers**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | One authenticated gateway for model access and supported hosted tools. |
+| **Requires** | Nous Portal account; Hermes setup and OAuth configuration. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Official integration · **Confidence:** High · **Demo status:** Docs + runbook
 
 ## Pain Point

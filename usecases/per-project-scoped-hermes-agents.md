@@ -1,5 +1,16 @@
 # Per-Project Scoped Hermes Agents with Ankh.md
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#orchestration--agent-memory) · **Orchestration & Agent Memory**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Project-specific identity, configuration, skills, sessions, and memory through Ankh.md. |
+| **Requires** | Hermes; Python 3.11+; Bun and Git; project-local agent configuration. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration · **Confidence:** Medium · **Demo status:** Runnable prototype
 
 ## Pain Point
@@ -62,4 +73,3 @@ The scoped agent should answer from that project's local identity, sessions, and
 
 - Ankh.md repository: <https://github.com/Abruptive/Ankh.md>
 - Hermes Agent repository: <https://github.com/NousResearch/hermes-agent>
-

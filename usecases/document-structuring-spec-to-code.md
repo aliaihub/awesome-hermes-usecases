@@ -1,5 +1,16 @@
 # Large-Spec Retrieval and Spec-to-Code Evidence
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#coding--engineering) · **Coding & Engineering**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Citable retrieval from large specifications and firmware symbols for implementation work. |
+| **Requires** | doc-str CLI and skill; terminal/file tools; SQLite FTS5. |
+| **Available** | Skill |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration · **Confidence:** Medium-High · **Demo status:** Public CLI + Hermes-compatible skill
 
 ## Pain Point

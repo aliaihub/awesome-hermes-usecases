@@ -1,5 +1,16 @@
 # Deterministic Record and Replay of Hermes Runs
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#observability--evaluation) · **Observability & Evaluation**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Offline run replay and checkpoint forks for comparing execution across models. |
+| **Requires** | Node.js 20+; recorder; working Hermes and configured provider. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration · **Confidence:** High · **Demo status:** Runnable
 
 ## Pain Point

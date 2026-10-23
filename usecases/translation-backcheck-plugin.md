@@ -1,5 +1,16 @@
 # Translation with Back-Translation Checks
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#content--marketing) · **Content & Marketing**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Translation, classification, and heuristic back-translation checks through an async plugin. |
+| **Requires** | plugin-llm-async-example; Hermes async LLM API and active model. |
+| **Available** | Plugin |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** First-party demo · **Confidence:** High · **Demo status:** Runnable reference plugin; not executed for this catalog update
 
 ## Pain Point
