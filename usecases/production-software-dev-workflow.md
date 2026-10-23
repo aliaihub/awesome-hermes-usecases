@@ -1,5 +1,16 @@
 # Production Software-Dev Workflow
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#coding--engineering) · **Coding & Engineering**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A field report on long coding sessions, delegation, and persistent project context. |
+| **Requires** | Hermes sessions and memory; delegation, terminal, file, and search tools. |
+| **Available** | Case study |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Independent deployment · **Confidence:** Medium-High · **Demo status:** Case study
 
 ## Pain Point

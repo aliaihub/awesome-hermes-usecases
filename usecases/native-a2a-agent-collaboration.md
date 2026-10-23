@@ -1,5 +1,16 @@
 # Native A2A Agent Collaboration
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#orchestration--agent-memory) · **Orchestration & Agent Memory**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Cross-framework agent discovery and delegation, or Hermes exposed as an authenticated service. |
+| **Requires** | Built-in A2A platform/toolset; reachable peer; authentication for non-local access. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Official integration · **Confidence:** High · **Demo status:** Docs + runnable protocol endpoint
 
 ## Pain Point

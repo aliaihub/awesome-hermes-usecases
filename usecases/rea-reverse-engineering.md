@@ -1,5 +1,16 @@
 # Reverse Engineering and Crash Triage with REA
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#coding--engineering) · **Coding & Engineering**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Evidence-based inspection of binaries, packages, firmware, and native crash dumps. |
+| **Requires** | REA plugin and MCP server; format-specific engines; binary and core for crash triage. |
+| **Available** | Plugin |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Official integration · **Confidence:** High · **Demo status:** Public plugin + runbook; not executed for this catalog update
 
 ## Pain Point

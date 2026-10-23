@@ -1,5 +1,16 @@
 # Dev: Local Model Quantization with TurboQuant
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#coding--engineering) · **Coding & Engineering**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A documented workflow to quantize, benchmark, and publish models for Apple Silicon. |
+| **Requires** | Apple Silicon and MLX; Hugging Face access; TurboQuant skill. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Community showcase · **Confidence:** High · **Demo status:** Verified workflow
 
 ## Pain Point

@@ -1,5 +1,16 @@
 # Hermes VS Code Workspace Stream
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#interfaces--integrations) · **Interfaces & Integrations**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Streaming chat, tool output, editor context, and persistent sessions inside VS Code. |
+| **Requires** | Hermes CLI with ACP; VS Code 1.85+; extension installation. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Community IDE integration · **Confidence:** High · **Demo status:** Public extension repository
 
 ## Pain Point

@@ -1,5 +1,16 @@
 # Mask Sensitive Numbers in Stored Final Replies
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#infrastructure--security) · **Infrastructure & Security**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Selected SSN and card-number formats masked in stored final replies. |
+| **Requires** | plugin-hook-example; Hermes lifecycle hooks. Raw CLI streaming can precede masking. |
+| **Available** | Plugin |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** First-party demo · **Confidence:** High · **Demo status:** Runnable reference plugin; not executed for this catalog update
 
 ## Pain Point

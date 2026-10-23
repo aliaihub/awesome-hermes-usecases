@@ -1,5 +1,16 @@
 # Paperclip Managed Employee
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#orchestration--agent-memory) · **Orchestration & Agent Memory**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Hermes workers coordinated through tasks, checkpoints, and persistent sessions. |
+| **Requires** | Paperclip instance; hermes-paperclip-adapter; model provider; persistent sessions. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Official companion · **Confidence:** High · **Demo status:** Companion repo
 
 ## Pain Point

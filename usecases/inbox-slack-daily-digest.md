@@ -1,5 +1,16 @@
 # Inbox → Slack Daily Digest
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#personal-productivity) · **Personal Productivity**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A scheduled inbox summary grouped into messages needing replies and FYI items. |
+| **Requires** | Gmail API or Microsoft Graph; Slack gateway; Hermes cron and model provider. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** First-party pattern · **Confidence:** High · **Demo status:** Documented cron recipe
 
 ## Pain Point

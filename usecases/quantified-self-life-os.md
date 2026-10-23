@@ -1,5 +1,16 @@
 # Quantified-Self Life OS
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#personal-productivity) · **Personal Productivity**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Structured routine tracking with scheduled reflections and evidence-bounded correlation summaries. |
+| **Requires** | hermes-life-os package or container; persistent storage; configured model provider. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Independent deployment · **Confidence:** High · **Demo status:** Runnable package + Docker demo
 
 ## Pain Point
@@ -66,4 +77,3 @@ What predicts my mood?
 
 - Hermes Life OS repository: <https://github.com/Lethe044/hermes-life-os>
 - Hermes Agent repository: <https://github.com/NousResearch/hermes-agent>
-

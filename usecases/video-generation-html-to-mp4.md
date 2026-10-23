@@ -1,5 +1,16 @@
 # AI Video Generation: HTML-to-MP4 Pipeline
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#content--marketing) · **Content & Marketing**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Designed HTML compositions rendered into narrated, animated video files. |
+| **Requires** | Node.js and HyperFrames; FFmpeg; Chromium; Open Design; optional TTS runtime. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 | **Aspect** | **Detail** |
 |---|---|
 | **Category** | Content & Creative Pipelines |

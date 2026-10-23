@@ -38,8 +38,36 @@ jobs:
             nascent_args+=(--allow-nascent)
           fi
           base_sha="$BASE_SHA"
+          # Generated summaries have their own consistency check. Only skip the
+          # network checks when the original page AND all URLs are unchanged.
+          if [ -f catalog.json ]; then
+            python scripts/render-catalog.py --check
+          fi
           mapfile -t changed_usecases < <(
-            git diff --name-only "$base_sha"...HEAD | grep '^usecases/.*\.md$' || true
+            python - <<'PY'
+          import os
+          import re
+          import subprocess
+          import sys
+          from pathlib import Path
+
+          base = os.environ['BASE_SHA']
+          paths = subprocess.check_output(['git', 'diff', '--name-only', base + '...HEAD'], text=True).splitlines()
+          summary = re.compile(r'\n<!-- catalog-summary:start -->.*?<!-- catalog-summary:end -->\n', re.S)
+          urls = re.compile(r'https?://[^\s)>\]]+')
+          for path in paths:
+              if not re.fullmatch(r'usecases/[^/]+\.md', path):
+                  continue
+              current_path = Path(path)
+              if not current_path.exists():
+                  continue
+              previous = subprocess.run(['git', 'show', base + ':' + path], capture_output=True, text=True)
+              current = current_path.read_text(encoding='utf-8')
+              if previous.returncode == 0 and summary.sub('', previous.stdout).rstrip() == summary.sub('', current).rstrip() and set(urls.findall(previous.stdout)) == set(urls.findall(current)):
+                  print(f'Summary-only update; source content unchanged: {path}', file=sys.stderr)
+                  continue
+              print(path)
+          PY
           )
           for f in "${changed_usecases[@]}"; do
             echo "::group::Verifying $f"

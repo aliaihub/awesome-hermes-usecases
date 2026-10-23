@@ -1,5 +1,16 @@
 # X Social Automation Toolset
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#content--marketing) · **Content & Marketing**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Search, account reads, trend monitoring, and operator-approved social actions. |
+| **Requires** | hermes-tweet plugin; Xquik API key; operator approval for write actions. |
+| **Available** | Plugin |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration · **Confidence:** Medium-High · **Demo status:** Published plugin + runbook
 
 ## Pain Point

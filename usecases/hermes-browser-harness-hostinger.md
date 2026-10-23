@@ -1,5 +1,16 @@
 # Hermes + Browser Harness on Hostinger VPS
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#hosting--model-providers) · **Hosting & Model Providers**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A VPS setup connecting Hermes skills to Browser Use's browser harness. |
+| **Requires** | Hostinger VPS; uv; model-provider and Browser Use Cloud credentials. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Independent first-person deployment · **Confidence:** High · **Demo status:** Public gist, 54★ at writing
 
 ## Pain Point

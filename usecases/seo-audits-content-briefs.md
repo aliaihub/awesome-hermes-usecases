@@ -1,5 +1,16 @@
 # SEO Audits, Structured Data, and Content Briefs
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#content--marketing) · **Content & Marketing**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Technical audits, structured-data checks, local-search analysis, and content briefs. |
+| **Requires** | hermes-seo and its managed runtime; browser dependencies; optional provider credentials. |
+| **Available** | Plugin |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration · **Confidence:** Medium-High · **Demo status:** Public plugin + runbook; not executed for this catalog update
 
 ## Pain Point

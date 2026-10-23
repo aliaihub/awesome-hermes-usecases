@@ -1,5 +1,16 @@
 # Matt Pocock Skills + Hermes Sub-Agents for Feature Work
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#coding--engineering) · **Coding & Engineering**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A planning-to-issues workflow with example artifacts and delegated implementation steps. |
+| **Requires** | Matt Pocock skills; Hermes delegation; a scoped feature and project context. |
+| **Available** | Walkthrough |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 | **Aspect** | **Detail** |
 |---|---|
 | **Category** | Software Development |

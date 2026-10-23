@@ -1,5 +1,16 @@
 # RL Training & Benchmarks
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#observability--evaluation) · **Observability & Evaluation**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Agent trajectory generation, benchmark evaluation, and reinforcement-learning environment patterns. |
+| **Requires** | Hermes environment development setup; suitable compute; optional tracking or training services. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Official core capability · **Confidence:** High · **Demo status:** Developer docs + code
 
 ## Pain Point

@@ -1,5 +1,16 @@
 # Hermes iOS Native Engine
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#home--devices) · **Home & Devices**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | An iOS interface with voice, camera, widgets, and permissioned sensor context. |
+| **Requires** | iOS app, relay, host connector, and MCP tools; relevant iOS permissions. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Mobile companion · **Confidence:** High · **Demo status:** Public community project
 
 ## Pain Point

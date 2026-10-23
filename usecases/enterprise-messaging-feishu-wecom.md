@@ -1,5 +1,16 @@
 # Enterprise Messaging (Feishu / WeCom)
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#business--administration) · **Business & Administration**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Always-on enterprise chat assistants with platform-specific media and vision support. |
+| **Requires** | Feishu or WeCom app registration; HTTPS webhooks; process supervisor. |
+| **Available** | Case study |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Independent deployment · **Confidence:** High · **Demo status:** Case study
 
 ## Pain Point

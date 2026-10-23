@@ -1,5 +1,16 @@
 # Enterprise Cloud Deployment (Bedrock / Azure AI Foundry / NVIDIA Build)
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#hosting--model-providers) · **Hosting & Model Providers**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Model-provider configuration for Bedrock, Azure AI Foundry, and NVIDIA endpoints. |
+| **Requires** | Selected cloud account and model access; provider-specific credentials or NIM host. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Official integration · **Confidence:** High · **Demo status:** Config patterns
 
 ## Pain Point

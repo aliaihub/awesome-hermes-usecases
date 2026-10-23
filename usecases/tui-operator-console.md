@@ -1,5 +1,16 @@
 # Infrastructure: TUI Operator Console
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#interfaces--integrations) · **Interfaces & Integrations**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Keyboard-driven access to sessions, skills, schedules, logs, and configuration. |
+| **Requires** | Hermes TUI; compatible terminal; project-specific installation instructions. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Community project · **Confidence:** High · **Demo status:** Verified project
 
 ## Pain Point

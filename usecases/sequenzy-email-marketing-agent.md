@@ -1,5 +1,16 @@
 # Sequenzy Email Marketing Agent
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#content--marketing) · **Content & Marketing**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Lifecycle campaign drafts, subscriber workflows, test sends, and email reporting. |
+| **Requires** | Sequenzy CLI/API credentials; sequenzy-email-marketing skill. |
+| **Available** | Skill |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration
 **Confidence:** Medium-High
 **Demo status:** Docs + runbook

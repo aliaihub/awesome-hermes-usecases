@@ -1,5 +1,16 @@
 # First-Dollar Business Guidance (Hermes Startup)
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#business--administration) · **Business & Administration**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Evidence-labeled business ideas and a bounded next action from your profile. |
+| **Requires** | Hermes Startup skill; configured model provider. |
+| **Available** | Skill |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Independent deployment · **Confidence:** High · **Demo status:** Runnable
 
 ## Pain Point

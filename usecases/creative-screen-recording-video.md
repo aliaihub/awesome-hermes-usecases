@@ -1,5 +1,16 @@
 # Creative: Screen Recording → Tutorial Video
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#content--marketing) · **Content & Marketing**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A documented recording-to-script-to-avatar-video workflow with reusable preferences. |
+| **Requires** | Screen recording; file and browser access; configured HeyGen account. |
+| **Available** | Case study |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Community showcase · **Confidence:** High · **Demo status:** Verified workflow
 
 ## Pain Point

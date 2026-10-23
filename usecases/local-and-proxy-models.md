@@ -1,5 +1,16 @@
 # Local & Proxy Model Backends
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#hosting--model-providers) · **Hosting & Model Providers**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Hermes configured against a local inference server or compatible model proxy. |
+| **Requires** | Local inference engine or proxy; suitable model and hardware; provider configuration. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Independent deployment · **Confidence:** High · **Demo status:** Config patterns
 
 ## Pain Point

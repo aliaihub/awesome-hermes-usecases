@@ -1,5 +1,16 @@
 # scicco/hermzner: Hardened Hermes on Hetzner + Tailscale
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#hosting--model-providers) · **Hosting & Model Providers**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A Terraform and Ansible deployment using rootless containers and Tailscale-only access. |
+| **Requires** | Hetzner and Tailscale accounts; Terraform, Ansible, jq, and curl. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Independent first-person deployment · **Confidence:** Medium-High · **Demo status:** Public repo · **Status label:** `nascent` (below 10★ threshold)
 
 ## Pain Point

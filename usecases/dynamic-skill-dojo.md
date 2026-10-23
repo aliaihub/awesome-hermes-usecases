@@ -1,5 +1,16 @@
 # Dynamic Skill Dojo
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#orchestration--agent-memory) · **Orchestration & Agent Memory**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Session-driven skill reviews, proposed patches, and optional self-evolution runs. |
+| **Requires** | Hermes Dojo skill and session history; optional self-evolution, cron, and Telegram. |
+| **Available** | Skill |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Self-improvement workflow · **Confidence:** High · **Demo status:** Public Hermes skill repository
 
 ## Pain Point

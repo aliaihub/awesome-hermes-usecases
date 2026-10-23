@@ -12,8 +12,18 @@ Thanks for thinking about contributing. This repo has one rule that keeps it use
    - **Prompts** — the actual prompts or cron expressions
    - **Skills Needed** — tools, gateways, plugins required
    - **Sources** — at least one primary source link
-3. Add a row in the right category table in [README.md](README.md). Suggest a new category in your PR if nothing fits.
-4. Open a PR.
+3. Add one entry to [catalog.json](catalog.json). Choose one primary category and write a short outcome and concrete requirements. Use one of the existing formats: `Guide`, `Plugin`, `Skill`, `Project`, `Case study`, `Local demo`, or `Walkthrough`. A format describes the available material, not whether it has been execution-tested.
+4. Run `python scripts/render-catalog.py`. This updates the README, count badge, category counts, and the opening summary on every page. Do not edit generated README rows or summary blocks by hand.
+5. Run `python scripts/render-catalog.py --check` and the [source verification](docs/verification-criteria.md) for your page, then open a PR.
+
+## Catalog design
+
+- Put a workflow under the reader's goal. Put setup, model backends, interfaces, orchestration, memory infrastructure, and evaluation under **Configure and extend Hermes**.
+- Give each entry one primary location. Use related links in the detail page for other connections.
+- Keep outcomes to one short sentence. List essential tools, accounts, hardware, and private components under requirements; avoid unsupported difficulty or setup-time estimates.
+- The six **Start here** entries are a curated selection. Adding a use case does not automatically add it to the featured list.
+- Every page opens with **Outcome**, **Requires**, **Available**, and **Validation**. The renderer inserts this block from `catalog.json` above the existing evidence notes and setup instructions.
+- Link checks and repository stars are evidence signals, not proof of an end-to-end run. If you performed an execution test, put a dated description of what you ran in the page body and update the entry's optional `validation` field with an accurate summary. Name historical evidence gaps explicitly.
 
 ## Evidence Rule (the important one)
 

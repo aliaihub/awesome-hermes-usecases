@@ -1,5 +1,16 @@
 # Weather Trading on Polymarket
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#knowledge--research) · **Knowledge & Research**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A historical weather-feed and market-scoring account; primary source URL missing. |
+| **Requires** | Documented setup names a VPS, weather feeds, and market API credentials. |
+| **Available** | Case study |
+| **Validation** | Legacy evidence gap: sources are named but no primary source URL is linked. Workflow not run during this redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Third-party integration · **Confidence:** Medium-High · **Status:** Real-world deployment, multiple traders
 
 ## Pain Point

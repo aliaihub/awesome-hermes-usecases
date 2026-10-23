@@ -1,5 +1,16 @@
 # Receipt Text or Image → Structured JSON
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#business--administration) · **Business & Administration**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Vendor, total, currency, and tag fields extracted from receipt text or images. |
+| **Requires** | plugin-llm-example; active model, with vision support for images. |
+| **Available** | Plugin |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** First-party demo · **Confidence:** High · **Demo status:** Runnable reference plugin; not executed for this catalog update
 
 ## Pain Point

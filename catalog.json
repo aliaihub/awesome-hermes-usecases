@@ -1,0 +1,692 @@
+{
+  "groups": [
+    {
+      "title": "Browse workflows by goal",
+      "categories": [
+        "Business & Administration",
+        "Coding & Engineering",
+        "Content & Marketing",
+        "Personal Productivity",
+        "Knowledge & Research",
+        "Home & Devices",
+        "Infrastructure & Security"
+      ]
+    },
+    {
+      "title": "Configure and extend Hermes",
+      "categories": [
+        "Hosting & Model Providers",
+        "Interfaces & Integrations",
+        "Orchestration & Agent Memory",
+        "Observability & Evaluation"
+      ]
+    }
+  ],
+  "featured": [
+    "daily-briefing-bot",
+    "team-telegram-assistant",
+    "obsidian-second-brain",
+    "receipt-to-structured-json",
+    "seo-audits-content-briefs",
+    "rea-reverse-engineering"
+  ],
+  "entries": [
+    {
+      "slug": "box-renewal-copilot",
+      "title": "Box renewal briefs",
+      "category": "Business & Administration",
+      "outcome": "Cited customer-renewal briefs from approved Box Hub documents.",
+      "format": "Guide",
+      "requires": "Box CLI and OAuth; Box Hubs and Box AI access."
+    },
+    {
+      "slug": "erpclaw-plain-english-erp",
+      "title": "ERP and accounting",
+      "category": "Business & Administration",
+      "outcome": "Invoices, inventory, payroll, and double-entry books through deterministic skill actions.",
+      "format": "Skill",
+      "requires": "ERPClaw skill; Python 3 and Git; SQLite or PostgreSQL."
+    },
+    {
+      "slug": "first-dollar-business-guidance",
+      "title": "First-dollar business guidance",
+      "category": "Business & Administration",
+      "outcome": "Evidence-labeled business ideas and a bounded next action from your profile.",
+      "format": "Skill",
+      "requires": "Hermes Startup skill; configured model provider."
+    },
+    {
+      "slug": "lead-research-youtrack",
+      "title": "Lead research → YouTrack",
+      "category": "Business & Administration",
+      "outcome": "Prospect research organized into company briefs and prioritized YouTrack tickets.",
+      "format": "Case study",
+      "requires": "Web research; custom context and lead skills; YouTrack API or MCP access."
+    },
+    {
+      "slug": "printing-factory-task-memory",
+      "title": "Printing-factory task memory",
+      "category": "Business & Administration",
+      "outcome": "Retrieval of previous tasks and decisions during daily factory operations.",
+      "format": "Case study",
+      "requires": "Custom memory skill; local JSON index and retrieval hooks."
+    },
+    {
+      "slug": "receipt-to-structured-json",
+      "title": "Receipt → structured JSON",
+      "category": "Business & Administration",
+      "outcome": "Vendor, total, currency, and tag fields extracted from receipt text or images.",
+      "format": "Plugin",
+      "requires": "plugin-llm-example; active model, with vision support for images."
+    },
+    {
+      "slug": "service-business-lead-to-payment",
+      "title": "Lead → estimate → payment",
+      "category": "Business & Administration",
+      "outcome": "A service-job pipeline covering qualification, estimates, reviewed payments, email, and CRM updates.",
+      "format": "Skill",
+      "requires": "Reference business skills; Telegram; Himalaya email CLI; Stripe test credentials."
+    },
+    {
+      "slug": "team-telegram-assistant",
+      "title": "Team Telegram assistant",
+      "category": "Business & Administration",
+      "outcome": "A shared team bot with per-user sessions and optional Docker terminal isolation.",
+      "format": "Local demo",
+      "requires": "Telegram bot token and user allowlist; Docker for isolated terminal access."
+    },
+    {
+      "slug": "teams-meeting-action-pipeline",
+      "title": "Teams meeting → action pipeline",
+      "category": "Business & Administration",
+      "outcome": "Meeting transcripts turned into durable summaries in Teams, Notion, or Linear.",
+      "format": "Guide",
+      "requires": "teams_pipeline; Microsoft Graph app permissions; HTTPS webhook; configured destination."
+    },
+    {
+      "slug": "enterprise-messaging-feishu-wecom",
+      "title": "Feishu and WeCom assistants",
+      "category": "Business & Administration",
+      "outcome": "Always-on enterprise chat assistants with platform-specific media and vision support.",
+      "format": "Case study",
+      "requires": "Feishu or WeCom app registration; HTTPS webhooks; process supervisor."
+    },
+    {
+      "slug": "github-pr-review-cron",
+      "title": "Scheduled PR review",
+      "category": "Coding & Engineering",
+      "outcome": "Periodic pull-request review and digests without a public webhook endpoint.",
+      "format": "Guide",
+      "requires": "Authenticated gh CLI; review skill; Hermes cron and delivery gateway."
+    },
+    {
+      "slug": "github-pr-review-webhook",
+      "title": "Webhook PR review",
+      "category": "Coding & Engineering",
+      "outcome": "Pull-request reviews triggered by signed GitHub webhook events.",
+      "format": "Guide",
+      "requires": "Authenticated gh CLI; review skill; signed webhook route with public HTTPS."
+    },
+    {
+      "slug": "production-software-dev-workflow",
+      "title": "Production development workflow",
+      "category": "Coding & Engineering",
+      "outcome": "A field report on long coding sessions, delegation, and persistent project context.",
+      "format": "Case study",
+      "requires": "Hermes sessions and memory; delegation, terminal, file, and search tools."
+    },
+    {
+      "slug": "dev-local-model-quantization",
+      "title": "Local model quantization",
+      "category": "Coding & Engineering",
+      "outcome": "A documented workflow to quantize, benchmark, and publish models for Apple Silicon.",
+      "format": "Guide",
+      "requires": "Apple Silicon and MLX; Hugging Face access; TurboQuant skill."
+    },
+    {
+      "slug": "document-structuring-spec-to-code",
+      "title": "Large-spec retrieval",
+      "category": "Coding & Engineering",
+      "outcome": "Citable retrieval from large specifications and firmware symbols for implementation work.",
+      "format": "Skill",
+      "requires": "doc-str CLI and skill; terminal/file tools; SQLite FTS5."
+    },
+    {
+      "slug": "function-calling-patterns",
+      "title": "Function-calling patterns",
+      "category": "Coding & Engineering",
+      "outcome": "Examples of tool registration, structured output, and recursive multi-step planning.",
+      "format": "Project",
+      "requires": "Hermes function-calling model and runtime; example-specific Python dependencies."
+    },
+    {
+      "slug": "rea-reverse-engineering",
+      "title": "Reverse engineering with REA",
+      "category": "Coding & Engineering",
+      "outcome": "Evidence-based inspection of binaries, packages, firmware, and native crash dumps.",
+      "format": "Plugin",
+      "requires": "REA plugin and MCP server; format-specific engines; binary and core for crash triage."
+    },
+    {
+      "slug": "matt-pocock-skills-subagents",
+      "title": "Feature planning with sub-agents",
+      "category": "Coding & Engineering",
+      "outcome": "A planning-to-issues workflow with example artifacts and delegated implementation steps.",
+      "format": "Walkthrough",
+      "requires": "Matt Pocock skills; Hermes delegation; a scoped feature and project context."
+    },
+    {
+      "slug": "seo-audits-content-briefs",
+      "title": "SEO audits and content briefs",
+      "category": "Content & Marketing",
+      "outcome": "Technical audits, structured-data checks, local-search analysis, and content briefs.",
+      "format": "Plugin",
+      "requires": "hermes-seo and its managed runtime; browser dependencies; optional provider credentials."
+    },
+    {
+      "slug": "x-social-automation-toolset",
+      "title": "X social automation",
+      "category": "Content & Marketing",
+      "outcome": "Search, account reads, trend monitoring, and operator-approved social actions.",
+      "format": "Plugin",
+      "requires": "hermes-tweet plugin; Xquik API key; operator approval for write actions."
+    },
+    {
+      "slug": "sequenzy-email-marketing-agent",
+      "title": "Email marketing with Sequenzy",
+      "category": "Content & Marketing",
+      "outcome": "Lifecycle campaign drafts, subscriber workflows, test sends, and email reporting.",
+      "format": "Skill",
+      "requires": "Sequenzy CLI/API credentials; sequenzy-email-marketing skill."
+    },
+    {
+      "slug": "autonovel-house-of-bells",
+      "title": "Autonovel: House of Bells",
+      "category": "Content & Marketing",
+      "outcome": "A published example of a novel, artwork, audiobook, and website production pipeline.",
+      "format": "Project",
+      "requires": "Autonovel repo and uv; Anthropic API; optional FAL and ElevenLabs accounts."
+    },
+    {
+      "slug": "creative-screen-recording-video",
+      "title": "Screen recording → tutorial video",
+      "category": "Content & Marketing",
+      "outcome": "A documented recording-to-script-to-avatar-video workflow with reusable preferences.",
+      "format": "Case study",
+      "requires": "Screen recording; file and browser access; configured HeyGen account."
+    },
+    {
+      "slug": "comfyui-workflow-orchestration",
+      "title": "ComfyUI orchestration",
+      "category": "Content & Marketing",
+      "outcome": "Node-based image and video generation workflows launched and managed through Hermes.",
+      "format": "Guide",
+      "requires": "ComfyUI and PyTorch environment; models and disk space; GPU recommended."
+    },
+    {
+      "slug": "video-generation-html-to-mp4",
+      "title": "HTML → MP4 video",
+      "category": "Content & Marketing",
+      "outcome": "Designed HTML compositions rendered into narrated, animated video files.",
+      "format": "Guide",
+      "requires": "Node.js and HyperFrames; FFmpeg; Chromium; Open Design; optional TTS runtime."
+    },
+    {
+      "slug": "translation-backcheck-plugin",
+      "title": "Translation with back-checks",
+      "category": "Content & Marketing",
+      "outcome": "Translation, classification, and heuristic back-translation checks through an async plugin.",
+      "format": "Plugin",
+      "requires": "plugin-llm-async-example; Hermes async LLM API and active model."
+    },
+    {
+      "slug": "daily-briefing-bot",
+      "title": "Daily briefing",
+      "category": "Personal Productivity",
+      "outcome": "Scheduled topic research delivered as a morning summary to your messaging app.",
+      "format": "Local demo",
+      "requires": "Configured model and web search; Hermes cron; Telegram or Discord gateway."
+    },
+    {
+      "slug": "inbox-slack-daily-digest",
+      "title": "Inbox → Slack digest",
+      "category": "Personal Productivity",
+      "outcome": "A scheduled inbox summary grouped into messages needing replies and FYI items.",
+      "format": "Guide",
+      "requires": "Gmail API or Microsoft Graph; Slack gateway; Hermes cron and model provider."
+    },
+    {
+      "slug": "intent-to-artifacts",
+      "title": "Intent → artifacts",
+      "category": "Personal Productivity",
+      "outcome": "Rough requests turned into runbooks, curated feeds, diagrams, and persistent notes.",
+      "format": "Case study",
+      "requires": "Terminal/file and research tools; notes folder; Telegram for delivery pings."
+    },
+    {
+      "slug": "nextcloud-workspace-assistant",
+      "title": "Nextcloud workspace assistant",
+      "category": "Personal Productivity",
+      "outcome": "Conversational access to self-hosted files, notes, calendars, tasks, and contacts.",
+      "format": "Skill",
+      "requires": "hermes-nextcloud; Python 3.8+; Nextcloud instance and app password."
+    },
+    {
+      "slug": "personal-ai-hub-apple-health-threads-gmail",
+      "title": "Personal AI hub",
+      "category": "Personal Productivity",
+      "outcome": "Health, social, inbox, and calendar context brought into one Telegram workspace.",
+      "format": "Case study",
+      "requires": "Apple Health export; Threads skill; Google OAuth; Telegram Topics."
+    },
+    {
+      "slug": "quantified-self-life-os",
+      "title": "Quantified-self Life OS",
+      "category": "Personal Productivity",
+      "outcome": "Structured routine tracking with scheduled reflections and evidence-bounded correlation summaries.",
+      "format": "Project",
+      "requires": "hermes-life-os package or container; persistent storage; configured model provider."
+    },
+    {
+      "slug": "zero-token-notifications",
+      "title": "Zero-token notifications",
+      "category": "Personal Productivity",
+      "outcome": "Script-based change detection that calls the model only when there is a signal.",
+      "format": "Project",
+      "requires": "Hermes cron with script support; checker script; messaging destination."
+    },
+    {
+      "slug": "obsidian-second-brain",
+      "title": "Obsidian second brain",
+      "category": "Knowledge & Research",
+      "outcome": "Persistent research notes, daily dashboards, and connected knowledge in an Obsidian vault.",
+      "format": "Guide",
+      "requires": "Obsidian vault; Obsidian skill and file tools; optional research integrations."
+    },
+    {
+      "slug": "multi-platform-research",
+      "title": "Multi-platform social research",
+      "category": "Knowledge & Research",
+      "outcome": "A unified brief from Reddit, X, YouTube, Hacker News, and prediction-market research.",
+      "format": "Skill",
+      "requires": "last30days Python engine; web search; optional platform auth and delivery gateway."
+    },
+    {
+      "slug": "weather-trading-polymarket",
+      "title": "Weather-market research pattern",
+      "category": "Knowledge & Research",
+      "outcome": "A historical weather-feed and market-scoring account; primary source URL missing.",
+      "format": "Case study",
+      "requires": "Documented setup names a VPS, weather feeds, and market API credentials.",
+      "validation": "Legacy evidence gap: sources are named but no primary source URL is linked. Workflow not run during this redesign."
+    },
+    {
+      "slug": "home-assistant-control",
+      "title": "Home Assistant control",
+      "category": "Home & Devices",
+      "outcome": "Conversational entity lookup, state reads, and service calls for a smart home.",
+      "format": "Guide",
+      "requires": "Home Assistant instance and access token; built-in Home Assistant tools."
+    },
+    {
+      "slug": "android-device-control",
+      "title": "Android device control",
+      "category": "Home & Devices",
+      "outcome": "Remote taps, swipes, screenshots, and screen reading from a Hermes conversation.",
+      "format": "Plugin",
+      "requires": "Android relay app and accessibility permission; Hermes plugin; reachable relay."
+    },
+    {
+      "slug": "hermes-ios-native-engine",
+      "title": "iPhone companion",
+      "category": "Home & Devices",
+      "outcome": "An iOS interface with voice, camera, widgets, and permissioned sensor context.",
+      "format": "Project",
+      "requires": "iOS app, relay, host connector, and MCP tools; relevant iOS permissions."
+    },
+    {
+      "slug": "autonomous-sre-incident-commander",
+      "title": "SRE incident commander",
+      "category": "Infrastructure & Security",
+      "outcome": "Incident detection, diagnosis, reviewed remediation, verification, and operational learning.",
+      "format": "Skill",
+      "requires": "incident-commander skill; monitored host access; Hermes cron and alert gateway."
+    },
+    {
+      "slug": "netbox-network-inventory",
+      "title": "Network discovery → NetBox",
+      "category": "Infrastructure & Security",
+      "outcome": "A daily discovery-to-inventory workflow with optional Proxmox configuration history.",
+      "format": "Case study",
+      "requires": "Discovery host and network access; NetBox API; custom skill configuration is private."
+    },
+    {
+      "slug": "autonomous-penetration-testing",
+      "title": "Authorized testing with Kali",
+      "category": "Infrastructure & Security",
+      "outcome": "A scoped security-assessment workflow with approval gates and structured reports.",
+      "format": "Skill",
+      "requires": "kali-pentest skill; Kali environment; authorized scope and human approval process."
+    },
+    {
+      "slug": "hermes-openshell-sandbox",
+      "title": "OpenShell sandbox",
+      "category": "Infrastructure & Security",
+      "outcome": "Hermes tools operating within external network, filesystem, syscall, and inference policies.",
+      "format": "Project",
+      "requires": "Docker; NVIDIA OpenShell; supported inference backend; configured policies."
+    },
+    {
+      "slug": "final-response-pii-redaction",
+      "title": "Stored-reply number masking",
+      "category": "Infrastructure & Security",
+      "outcome": "Selected SSN and card-number formats masked in stored final replies.",
+      "format": "Plugin",
+      "requires": "plugin-hook-example; Hermes lifecycle hooks. Raw CLI streaming can precede masking."
+    },
+    {
+      "slug": "nous-portal-gateway",
+      "title": "Nous Portal gateway",
+      "category": "Hosting & Model Providers",
+      "outcome": "One authenticated gateway for model access and supported hosted tools.",
+      "format": "Guide",
+      "requires": "Nous Portal account; Hermes setup and OAuth configuration."
+    },
+    {
+      "slug": "local-and-proxy-models",
+      "title": "Local and proxy backends",
+      "category": "Hosting & Model Providers",
+      "outcome": "Hermes configured against a local inference server or compatible model proxy.",
+      "format": "Guide",
+      "requires": "Local inference engine or proxy; suitable model and hardware; provider configuration."
+    },
+    {
+      "slug": "local-model-auto-detection",
+      "title": "Local model auto-detection",
+      "category": "Hosting & Model Providers",
+      "outcome": "Local-server probing that identifies the running model and configures its context window.",
+      "format": "Guide",
+      "requires": "Supported local inference server; Hermes setup wizard."
+    },
+    {
+      "slug": "enterprise-cloud-deployment",
+      "title": "Enterprise model gateways",
+      "category": "Hosting & Model Providers",
+      "outcome": "Model-provider configuration for Bedrock, Azure AI Foundry, and NVIDIA endpoints.",
+      "format": "Guide",
+      "requires": "Selected cloud account and model access; provider-specific credentials or NIM host."
+    },
+    {
+      "slug": "china-region-llm-endpoints",
+      "title": "China-region model endpoints",
+      "category": "Hosting & Model Providers",
+      "outcome": "Provider configuration for Moonshot, MiniMax, and z.ai model services.",
+      "format": "Guide",
+      "requires": "API keys for the selected providers; network access to their endpoints."
+    },
+    {
+      "slug": "oauth-cloud-providers",
+      "title": "Coding subscriptions as backends",
+      "category": "Hosting & Model Providers",
+      "outcome": "Authentication patterns for supported Copilot, Codex, and Claude subscription backends.",
+      "format": "Guide",
+      "requires": "Eligible coding-tool account; provider-specific OAuth or CLI setup; any required extra usage."
+    },
+    {
+      "slug": "headless-daemon-server",
+      "title": "Headless daemon server",
+      "category": "Hosting & Model Providers",
+      "outcome": "A supervised Linux gateway with reboot-safe scheduling and dedicated service identity.",
+      "format": "Guide",
+      "requires": "Linux VPS with systemd; Hermes and provider authentication; gateway configuration."
+    },
+    {
+      "slug": "hermes-on-flyio",
+      "title": "Hermes on Fly.io",
+      "category": "Hosting & Model Providers",
+      "outcome": "A Fly Machine deployment with persistent agent state and volume snapshots.",
+      "format": "Guide",
+      "requires": "Fly.io account and flyctl; model credential; optional messaging gateway credential."
+    },
+    {
+      "slug": "hermes-on-hugging-face-spaces",
+      "title": "Hermes on Hugging Face Spaces",
+      "category": "Hosting & Model Providers",
+      "outcome": "A hosted dashboard and gateway with state synchronized to a private Dataset.",
+      "format": "Project",
+      "requires": "Hugging Face Space, private Dataset, and write token; model credential."
+    },
+    {
+      "slug": "hermes-browser-harness-hostinger",
+      "title": "Browser Harness on Hostinger",
+      "category": "Hosting & Model Providers",
+      "outcome": "A VPS setup connecting Hermes skills to Browser Use's browser harness.",
+      "format": "Guide",
+      "requires": "Hostinger VPS; uv; model-provider and Browser Use Cloud credentials."
+    },
+    {
+      "slug": "scicco-hermzner-hetzner",
+      "title": "Hardened Hetzner deployment",
+      "category": "Hosting & Model Providers",
+      "outcome": "A Terraform and Ansible deployment using rootless containers and Tailscale-only access.",
+      "format": "Project",
+      "requires": "Hetzner and Tailscale accounts; Terraform, Ansible, jq, and curl."
+    },
+    {
+      "slug": "integrated-self-hosted-hermes-stack",
+      "title": "Integrated self-hosted stack",
+      "category": "Hosting & Model Providers",
+      "outcome": "A tiered Docker stack for inference, search, memory, automation, and monitoring.",
+      "format": "Project",
+      "requires": "Docker Compose; Hermes; LiteLLM and model backend; selected optional services."
+    },
+    {
+      "slug": "kubernetes-declarative-agent-fleet",
+      "title": "Declarative Kubernetes fleet",
+      "category": "Hosting & Model Providers",
+      "outcome": "Agent configuration, skills, schedules, and storage reconciled from Kubernetes resources.",
+      "format": "Project",
+      "requires": "Kubernetes and Helm; HermesAgent operator; provider secret; persistent storage."
+    },
+    {
+      "slug": "razorpay-isolated-employee-agents",
+      "title": "Razorpay employee-agent fleet",
+      "category": "Hosting & Model Providers",
+      "outcome": "A production account of isolated employee agents with controlled, attributable network access.",
+      "format": "Case study",
+      "requires": "Kubernetes; organizational identity, storage, model gateway, and egress controls; private deployment code."
+    },
+    {
+      "slug": "browser-admin-uis",
+      "title": "Browser and admin interfaces",
+      "category": "Interfaces & Integrations",
+      "outcome": "A comparison of official and community browser interfaces for agent operations.",
+      "format": "Guide",
+      "requires": "Hermes API server; UI-specific dependencies; TLS for external access."
+    },
+    {
+      "slug": "open-webui-frontend",
+      "title": "Open WebUI frontend",
+      "category": "Interfaces & Integrations",
+      "outcome": "A browser chat interface connected to the Hermes API server.",
+      "format": "Local demo",
+      "requires": "Hermes API server and API key; Docker Compose; configured model provider."
+    },
+    {
+      "slug": "tui-operator-console",
+      "title": "Terminal operator console",
+      "category": "Interfaces & Integrations",
+      "outcome": "Keyboard-driven access to sessions, skills, schedules, logs, and configuration.",
+      "format": "Project",
+      "requires": "Hermes TUI; compatible terminal; project-specific installation instructions."
+    },
+    {
+      "slug": "hermes-vscode-workspace-stream",
+      "title": "VS Code workspace stream",
+      "category": "Interfaces & Integrations",
+      "outcome": "Streaming chat, tool output, editor context, and persistent sessions inside VS Code.",
+      "format": "Project",
+      "requires": "Hermes CLI with ACP; VS Code 1.85+; extension installation."
+    },
+    {
+      "slug": "voice-assistant",
+      "title": "Voice assistant workflows",
+      "category": "Interfaces & Integrations",
+      "outcome": "CLI microphone conversations, messaging voice notes, and Discord voice interactions.",
+      "format": "Guide",
+      "requires": "Voice toolset; transcription and TTS providers; gateway for messaging modes."
+    },
+    {
+      "slug": "hermes-live-voice",
+      "title": "Continuous live voice",
+      "category": "Interfaces & Integrations",
+      "outcome": "Interruptible voice sessions with durable background tasks and reconnect completion notices.",
+      "format": "Plugin",
+      "requires": "Hermes Dashboard and durable runs; hermes-live-voice package; supported voice provider."
+    },
+    {
+      "slug": "hermes-mcp-conversation-bridge",
+      "title": "Hermes MCP conversation bridge",
+      "category": "Interfaces & Integrations",
+      "outcome": "Conversation history, message events, gateway sending, and opt-in tools for MCP clients.",
+      "format": "Plugin",
+      "requires": "mcp-serve plugin; external stdio MCP client; optional gateway and tool-provider configuration."
+    },
+    {
+      "slug": "browser-workflow-record-to-skill",
+      "title": "Browser demonstration → skill",
+      "category": "Orchestration & Agent Memory",
+      "outcome": "A recorded browser demonstration converted into a replayable Hermes skill.",
+      "format": "Plugin",
+      "requires": "workflow-record Labs plugin; Chromium CDP access; replay skill and /learn."
+    },
+    {
+      "slug": "native-a2a-agent-collaboration",
+      "title": "Native A2A collaboration",
+      "category": "Orchestration & Agent Memory",
+      "outcome": "Cross-framework agent discovery and delegation, or Hermes exposed as an authenticated service.",
+      "format": "Guide",
+      "requires": "Built-in A2A platform/toolset; reachable peer; authentication for non-local access."
+    },
+    {
+      "slug": "kanban-multi-agent-swarm",
+      "title": "Kanban agent swarm",
+      "category": "Orchestration & Agent Memory",
+      "outcome": "A chat request turned into persistent worker, verifier, and synthesizer tasks.",
+      "format": "Guide",
+      "requires": "Hermes with kanban support; messaging gateway; model capacity for parallel agents."
+    },
+    {
+      "slug": "paperclip-managed-employee",
+      "title": "Paperclip managed employee",
+      "category": "Orchestration & Agent Memory",
+      "outcome": "Hermes workers coordinated through tasks, checkpoints, and persistent sessions.",
+      "format": "Project",
+      "requires": "Paperclip instance; hermes-paperclip-adapter; model provider; persistent sessions."
+    },
+    {
+      "slug": "competing-autonomous-ai-companies",
+      "title": "Competing AI companies",
+      "category": "Orchestration & Agent Memory",
+      "outcome": "Two Paperclip teams compared on shared tasks, execution evidence, and skill transfer.",
+      "format": "Project",
+      "requires": "Hermes and adapter; Paperclip/PostgreSQL; Python and Node.js; dashboard and watcher."
+    },
+    {
+      "slug": "deterministic-workflow-delegation",
+      "title": "Deterministic workflow delegation",
+      "category": "Orchestration & Agent Memory",
+      "outcome": "Repeatable jobs moved into checked workflow files with budgets and execution traces.",
+      "format": "Skill",
+      "requires": "Nika skill and runner; included mock path; optional Ollama for live inference."
+    },
+    {
+      "slug": "per-project-scoped-hermes-agents",
+      "title": "Project-scoped agents",
+      "category": "Orchestration & Agent Memory",
+      "outcome": "Project-specific identity, configuration, skills, sessions, and memory through Ankh.md.",
+      "format": "Project",
+      "requires": "Hermes; Python 3.11+; Bun and Git; project-local agent configuration."
+    },
+    {
+      "slug": "dynamic-skill-dojo",
+      "title": "Dynamic Skill Dojo",
+      "category": "Orchestration & Agent Memory",
+      "outcome": "Session-driven skill reviews, proposed patches, and optional self-evolution runs.",
+      "format": "Skill",
+      "requires": "Hermes Dojo skill and session history; optional self-evolution, cron, and Telegram."
+    },
+    {
+      "slug": "self-evolution",
+      "title": "Skill self-evolution",
+      "category": "Orchestration & Agent Memory",
+      "outcome": "An evaluation-driven loop for optimizing skills, prompts, and tool descriptions.",
+      "format": "Project",
+      "requires": "Hermes repo; skill evaluation set; configured LLM provider."
+    },
+    {
+      "slug": "yantrikdb-memory-mcp",
+      "title": "YantrikDB memory via MCP",
+      "category": "Orchestration & Agent Memory",
+      "outcome": "Persistent cognitive memory with vector, graph, temporal, and contradiction-aware retrieval.",
+      "format": "Project",
+      "requires": "Hermes MCP support; Python and yantrikdb-mcp; optional SSE host."
+    },
+    {
+      "slug": "hermes-memory-os",
+      "title": "Hermes Memory OS",
+      "category": "Orchestration & Agent Memory",
+      "outcome": "Layered session search, trusted facts, hybrid retrieval, extraction, and a self-curating wiki.",
+      "format": "Project",
+      "requires": "Hermes hooks; Docker and Python 3.11+; Qdrant, Redis, ARQ, and SQLite."
+    },
+    {
+      "slug": "zouroboros-swarm-bridge",
+      "title": "Zouroboros executor bridge",
+      "category": "Orchestration & Agent Memory",
+      "outcome": "An archived adapter pattern for running Hermes inside a multi-agent orchestrator.",
+      "format": "Project",
+      "requires": "Working Hermes installation; Node.js/pnpm; bridge or successor monorepo setup."
+    },
+    {
+      "slug": "hermes-labyrinth-observability",
+      "title": "Labyrinth observability",
+      "category": "Observability & Evaluation",
+      "outcome": "Agent journeys reconstructed from prompts, tools, approvals, failures, and memory activity.",
+      "format": "Plugin",
+      "requires": "Hermes Dashboard; plugin directory access; local Hermes activity and state."
+    },
+    {
+      "slug": "deterministic-record-and-replay",
+      "title": "Deterministic record and replay",
+      "category": "Observability & Evaluation",
+      "outcome": "Offline run replay and checkpoint forks for comparing execution across models.",
+      "format": "Project",
+      "requires": "Node.js 20+; recorder; working Hermes and configured provider."
+    },
+    {
+      "slug": "local-api-trace-debugging",
+      "title": "Local API trace debugging",
+      "category": "Observability & Evaluation",
+      "outcome": "Provider requests, tool payloads, streamed responses, and token usage in a local viewer.",
+      "format": "Project",
+      "requires": "Python 3.11+; claude-tap; Hermes provider configuration; browser."
+    },
+    {
+      "slug": "clawbench-browser-agent-evaluation",
+      "title": "ClawBench browser evaluation",
+      "category": "Observability & Evaluation",
+      "outcome": "Isolated browser tasks with interception-based scoring and multi-layer execution traces.",
+      "format": "Project",
+      "requires": "Python 3.11+ and uv; Docker or Podman; supported model API endpoint."
+    },
+    {
+      "slug": "rl-training-benchmarks",
+      "title": "RL training and benchmarks",
+      "category": "Observability & Evaluation",
+      "outcome": "Agent trajectory generation, benchmark evaluation, and reinforcement-learning environment patterns.",
+      "format": "Guide",
+      "requires": "Hermes environment development setup; suitable compute; optional tracking or training services."
+    }
+  ]
+}

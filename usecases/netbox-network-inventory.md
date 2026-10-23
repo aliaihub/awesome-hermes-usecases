@@ -1,5 +1,16 @@
 # Network Discovery → NetBox Inventory
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#infrastructure--security) · **Infrastructure & Security**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A daily discovery-to-inventory workflow with optional Proxmox configuration history. |
+| **Requires** | Discovery host and network access; NetBox API; custom skill configuration is private. |
+| **Available** | Case study |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Independent deployment · **Confidence:** Medium-High · **Demo status:** First-person case study; private skill configuration
 
 ## Pain Point

@@ -1,5 +1,16 @@
 # Team Telegram Assistant
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#business--administration) · **Business & Administration**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A shared team bot with per-user sessions and optional Docker terminal isolation. |
+| **Requires** | Telegram bot token and user allowlist; Docker for isolated terminal access. |
+| **Available** | Local demo |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** First-party demo · **Confidence:** High · **Demo status:** [Runnable](../demos/team-telegram/)
 
 ## Pain Point

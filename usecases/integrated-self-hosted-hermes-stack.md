@@ -1,5 +1,16 @@
 # Integrated Self-Hosted Hermes Stack
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#hosting--model-providers) · **Hosting & Model Providers**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | A tiered Docker stack for inference, search, memory, automation, and monitoring. |
+| **Requires** | Docker Compose; Hermes; LiteLLM and model backend; selected optional services. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration · **Confidence:** Medium-High · **Demo status:** Runnable installer + verification script
 
 ## Pain Point
@@ -53,4 +64,3 @@ Evey configures infrastructure rather than adding a single task prompt. After `v
 
 - Evey Setup repository: <https://github.com/42-evey/evey-setup>
 - Hermes Agent repository: <https://github.com/NousResearch/hermes-agent>
-

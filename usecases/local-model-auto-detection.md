@@ -1,5 +1,16 @@
 # Infrastructure: Local Model Auto-Detection
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#hosting--model-providers) · **Hosting & Model Providers**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Local-server probing that identifies the running model and configures its context window. |
+| **Requires** | Supported local inference server; Hermes setup wizard. |
+| **Available** | Guide |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Community showcase · **Confidence:** High · **Demo status:** Verified workflow
 
 ## Pain Point

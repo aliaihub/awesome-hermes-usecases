@@ -1,5 +1,16 @@
 # Declarative Hermes Agents on Kubernetes
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#hosting--model-providers) · **Hosting & Model Providers**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Agent configuration, skills, schedules, and storage reconciled from Kubernetes resources. |
+| **Requires** | Kubernetes and Helm; HermesAgent operator; provider secret; persistent storage. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration · **Confidence:** Medium-High · **Demo status:** Public operator + runbook
 
 ## Pain Point

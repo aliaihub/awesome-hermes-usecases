@@ -1,5 +1,16 @@
 # Personal AI Hub: Apple Health + Threads + Gmail + Calendar
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#personal-productivity) · **Personal Productivity**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Health, social, inbox, and calendar context brought into one Telegram workspace. |
+| **Requires** | Apple Health export; Threads skill; Google OAuth; Telegram Topics. |
+| **Available** | Case study |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Independent first-person deployment · **Confidence:** Medium-High · **Demo status:** Public blog + open-source skill
 
 ## Pain Point

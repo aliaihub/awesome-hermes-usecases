@@ -6,223 +6,256 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 ![Use Cases](https://img.shields.io/badge/usecases-82-blue?style=flat-square)
-![Last Update](https://img.shields.io/github/last-commit/ali-erfan-dev/awesome-hermes-usecases?label=Last%20Update&style=flat-square)
-![Stars](https://img.shields.io/github/stars/ali-erfan-dev/awesome-hermes-usecases?style=flat-square)
+![Last Update](https://img.shields.io/github/last-commit/aliaihub/awesome-hermes-usecases?label=Last%20Update&style=flat-square)
+![Stars](https://img.shields.io/github/stars/aliaihub/awesome-hermes-usecases?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
 
-**A community collection of real-world [Hermes Agent](https://github.com/NousResearch/hermes-agent) use cases — each one backed by public evidence.**
+**Practical workflows, community projects, and deployment guides for [Hermes Agent](https://github.com/NousResearch/hermes-agent).**
 
-| | This Catalog | Official Docs | X Threads | Reddit |
-|---|---|---|---|---|
-| Organized by category | ✅ | Partial | ❌ | ❌ |
-| Runnable demos included | ✅ | ❌ | ❌ | ❌ |
-| Primary source required | ✅ | ✅ | ❌ | ❌ |
-| Community-maintained | ✅ | ❌ | ❌ | ❌ |
+Browse by the result you want, then open a page for requirements, setup, prompts, and sources. Public evidence and execution testing are different: each page states its validation limits.
 
-> [!NOTE]
-> **Evidence rule.** Every use case here links to a primary source: an official Hermes doc, a Nous Research companion repo, a GitHub issue with deployment details, or a first-person blog post. If the only evidence is a tweet or "community build" marketing page, it lives in [`research/unverified.md`](research/unverified.md) instead — not in the catalog below.
+## Start here
 
-## Quick start
+Six entry points, from everyday automation to specialist tools. These are featured examples, not a difficulty ranking.
 
-New to Hermes Agent? The fastest path:
+| Use case | What you get | Format |
+| --- | --- | --- |
+| [Daily briefing](usecases/daily-briefing-bot.md) | Scheduled topic research delivered as a morning summary to your messaging app. | Local demo |
+| [Team Telegram assistant](usecases/team-telegram-assistant.md) | A shared team bot with per-user sessions and optional Docker terminal isolation. | Local demo |
+| [Obsidian second brain](usecases/obsidian-second-brain.md) | Persistent research notes, daily dashboards, and connected knowledge in an Obsidian vault. | Guide |
+| [Receipt → structured JSON](usecases/receipt-to-structured-json.md) | Vendor, total, currency, and tag fields extracted from receipt text or images. | Plugin |
+| [SEO audits and content briefs](usecases/seo-audits-content-briefs.md) | Technical audits, structured-data checks, local-search analysis, and content briefs. | Plugin |
+| [Reverse engineering with REA](usecases/rea-reverse-engineering.md) | Evidence-based inspection of binaries, packages, firmware, and native crash dumps. | Plugin |
+
+## Find a use case
+
+**Browse workflows by goal**
+
+- [Business & Administration](#business--administration) · 10
+- [Coding & Engineering](#coding--engineering) · 8
+- [Content & Marketing](#content--marketing) · 8
+- [Personal Productivity](#personal-productivity) · 7
+- [Knowledge & Research](#knowledge--research) · 3
+- [Home & Devices](#home--devices) · 3
+- [Infrastructure & Security](#infrastructure--security) · 5
+
+**Configure and extend Hermes**
+
+- [Hosting & Model Providers](#hosting--model-providers) · 14
+- [Interfaces & Integrations](#interfaces--integrations) · 7
+- [Orchestration & Agent Memory](#orchestration--agent-memory) · 12
+- [Observability & Evaluation](#observability--evaluation) · 5
+
+**Formats:** **Local demo** includes a starter in this repo; **Plugin**, **Skill**, and **Project** link to an implementation; **Guide** provides a runbook or configuration; **Case study** describes a deployment that may include private components; **Walkthrough** includes planning examples.
+
+A format label describes what is available. It does not mean we ran or audited the integration.
+
+<!-- catalog-list:start -->
+
+## Browse workflows by goal
+
+### Business & Administration
+
+| Use case | What you get | Format |
+| --- | --- | --- |
+| [Box renewal briefs](usecases/box-renewal-copilot.md) | Cited customer-renewal briefs from approved Box Hub documents. | Guide |
+| [ERP and accounting](usecases/erpclaw-plain-english-erp.md) | Invoices, inventory, payroll, and double-entry books through deterministic skill actions. | Skill |
+| [First-dollar business guidance](usecases/first-dollar-business-guidance.md) | Evidence-labeled business ideas and a bounded next action from your profile. | Skill |
+| [Lead research → YouTrack](usecases/lead-research-youtrack.md) | Prospect research organized into company briefs and prioritized YouTrack tickets. | Case study |
+| [Printing-factory task memory](usecases/printing-factory-task-memory.md) | Retrieval of previous tasks and decisions during daily factory operations. | Case study |
+| [Receipt → structured JSON](usecases/receipt-to-structured-json.md) | Vendor, total, currency, and tag fields extracted from receipt text or images. | Plugin |
+| [Lead → estimate → payment](usecases/service-business-lead-to-payment.md) | A service-job pipeline covering qualification, estimates, reviewed payments, email, and CRM updates. | Skill |
+| [Team Telegram assistant](usecases/team-telegram-assistant.md) | A shared team bot with per-user sessions and optional Docker terminal isolation. | Local demo |
+| [Teams meeting → action pipeline](usecases/teams-meeting-action-pipeline.md) | Meeting transcripts turned into durable summaries in Teams, Notion, or Linear. | Guide |
+| [Feishu and WeCom assistants](usecases/enterprise-messaging-feishu-wecom.md) | Always-on enterprise chat assistants with platform-specific media and vision support. | Case study |
+
+[↑ Browse categories](#find-a-use-case)
+
+### Coding & Engineering
+
+| Use case | What you get | Format |
+| --- | --- | --- |
+| [Scheduled PR review](usecases/github-pr-review-cron.md) | Periodic pull-request review and digests without a public webhook endpoint. | Guide |
+| [Webhook PR review](usecases/github-pr-review-webhook.md) | Pull-request reviews triggered by signed GitHub webhook events. | Guide |
+| [Production development workflow](usecases/production-software-dev-workflow.md) | A field report on long coding sessions, delegation, and persistent project context. | Case study |
+| [Local model quantization](usecases/dev-local-model-quantization.md) | A documented workflow to quantize, benchmark, and publish models for Apple Silicon. | Guide |
+| [Large-spec retrieval](usecases/document-structuring-spec-to-code.md) | Citable retrieval from large specifications and firmware symbols for implementation work. | Skill |
+| [Function-calling patterns](usecases/function-calling-patterns.md) | Examples of tool registration, structured output, and recursive multi-step planning. | Project |
+| [Reverse engineering with REA](usecases/rea-reverse-engineering.md) | Evidence-based inspection of binaries, packages, firmware, and native crash dumps. | Plugin |
+| [Feature planning with sub-agents](usecases/matt-pocock-skills-subagents.md) | A planning-to-issues workflow with example artifacts and delegated implementation steps. | Walkthrough |
+
+[↑ Browse categories](#find-a-use-case)
+
+### Content & Marketing
+
+| Use case | What you get | Format |
+| --- | --- | --- |
+| [SEO audits and content briefs](usecases/seo-audits-content-briefs.md) | Technical audits, structured-data checks, local-search analysis, and content briefs. | Plugin |
+| [X social automation](usecases/x-social-automation-toolset.md) | Search, account reads, trend monitoring, and operator-approved social actions. | Plugin |
+| [Email marketing with Sequenzy](usecases/sequenzy-email-marketing-agent.md) | Lifecycle campaign drafts, subscriber workflows, test sends, and email reporting. | Skill |
+| [Autonovel: House of Bells](usecases/autonovel-house-of-bells.md) | A published example of a novel, artwork, audiobook, and website production pipeline. | Project |
+| [Screen recording → tutorial video](usecases/creative-screen-recording-video.md) | A documented recording-to-script-to-avatar-video workflow with reusable preferences. | Case study |
+| [ComfyUI orchestration](usecases/comfyui-workflow-orchestration.md) | Node-based image and video generation workflows launched and managed through Hermes. | Guide |
+| [HTML → MP4 video](usecases/video-generation-html-to-mp4.md) | Designed HTML compositions rendered into narrated, animated video files. | Guide |
+| [Translation with back-checks](usecases/translation-backcheck-plugin.md) | Translation, classification, and heuristic back-translation checks through an async plugin. | Plugin |
+
+[↑ Browse categories](#find-a-use-case)
+
+### Personal Productivity
+
+| Use case | What you get | Format |
+| --- | --- | --- |
+| [Daily briefing](usecases/daily-briefing-bot.md) | Scheduled topic research delivered as a morning summary to your messaging app. | Local demo |
+| [Inbox → Slack digest](usecases/inbox-slack-daily-digest.md) | A scheduled inbox summary grouped into messages needing replies and FYI items. | Guide |
+| [Intent → artifacts](usecases/intent-to-artifacts.md) | Rough requests turned into runbooks, curated feeds, diagrams, and persistent notes. | Case study |
+| [Nextcloud workspace assistant](usecases/nextcloud-workspace-assistant.md) | Conversational access to self-hosted files, notes, calendars, tasks, and contacts. | Skill |
+| [Personal AI hub](usecases/personal-ai-hub-apple-health-threads-gmail.md) | Health, social, inbox, and calendar context brought into one Telegram workspace. | Case study |
+| [Quantified-self Life OS](usecases/quantified-self-life-os.md) | Structured routine tracking with scheduled reflections and evidence-bounded correlation summaries. | Project |
+| [Zero-token notifications](usecases/zero-token-notifications.md) | Script-based change detection that calls the model only when there is a signal. | Project |
+
+[↑ Browse categories](#find-a-use-case)
+
+### Knowledge & Research
+
+| Use case | What you get | Format |
+| --- | --- | --- |
+| [Obsidian second brain](usecases/obsidian-second-brain.md) | Persistent research notes, daily dashboards, and connected knowledge in an Obsidian vault. | Guide |
+| [Multi-platform social research](usecases/multi-platform-research.md) | A unified brief from Reddit, X, YouTube, Hacker News, and prediction-market research. | Skill |
+| [Weather-market research pattern](usecases/weather-trading-polymarket.md) | A historical weather-feed and market-scoring account; primary source URL missing. | Case study |
+
+[↑ Browse categories](#find-a-use-case)
+
+### Home & Devices
+
+| Use case | What you get | Format |
+| --- | --- | --- |
+| [Home Assistant control](usecases/home-assistant-control.md) | Conversational entity lookup, state reads, and service calls for a smart home. | Guide |
+| [Android device control](usecases/android-device-control.md) | Remote taps, swipes, screenshots, and screen reading from a Hermes conversation. | Plugin |
+| [iPhone companion](usecases/hermes-ios-native-engine.md) | An iOS interface with voice, camera, widgets, and permissioned sensor context. | Project |
+
+[↑ Browse categories](#find-a-use-case)
+
+### Infrastructure & Security
+
+| Use case | What you get | Format |
+| --- | --- | --- |
+| [SRE incident commander](usecases/autonomous-sre-incident-commander.md) | Incident detection, diagnosis, reviewed remediation, verification, and operational learning. | Skill |
+| [Network discovery → NetBox](usecases/netbox-network-inventory.md) | A daily discovery-to-inventory workflow with optional Proxmox configuration history. | Case study |
+| [Authorized testing with Kali](usecases/autonomous-penetration-testing.md) | A scoped security-assessment workflow with approval gates and structured reports. | Skill |
+| [OpenShell sandbox](usecases/hermes-openshell-sandbox.md) | Hermes tools operating within external network, filesystem, syscall, and inference policies. | Project |
+| [Stored-reply number masking](usecases/final-response-pii-redaction.md) | Selected SSN and card-number formats masked in stored final replies. | Plugin |
+
+[↑ Browse categories](#find-a-use-case)
+
+## Configure and extend Hermes
+
+### Hosting & Model Providers
+
+| Use case | What you get | Format |
+| --- | --- | --- |
+| [Nous Portal gateway](usecases/nous-portal-gateway.md) | One authenticated gateway for model access and supported hosted tools. | Guide |
+| [Local and proxy backends](usecases/local-and-proxy-models.md) | Hermes configured against a local inference server or compatible model proxy. | Guide |
+| [Local model auto-detection](usecases/local-model-auto-detection.md) | Local-server probing that identifies the running model and configures its context window. | Guide |
+| [Enterprise model gateways](usecases/enterprise-cloud-deployment.md) | Model-provider configuration for Bedrock, Azure AI Foundry, and NVIDIA endpoints. | Guide |
+| [China-region model endpoints](usecases/china-region-llm-endpoints.md) | Provider configuration for Moonshot, MiniMax, and z.ai model services. | Guide |
+| [Coding subscriptions as backends](usecases/oauth-cloud-providers.md) | Authentication patterns for supported Copilot, Codex, and Claude subscription backends. | Guide |
+| [Headless daemon server](usecases/headless-daemon-server.md) | A supervised Linux gateway with reboot-safe scheduling and dedicated service identity. | Guide |
+| [Hermes on Fly.io](usecases/hermes-on-flyio.md) | A Fly Machine deployment with persistent agent state and volume snapshots. | Guide |
+| [Hermes on Hugging Face Spaces](usecases/hermes-on-hugging-face-spaces.md) | A hosted dashboard and gateway with state synchronized to a private Dataset. | Project |
+| [Browser Harness on Hostinger](usecases/hermes-browser-harness-hostinger.md) | A VPS setup connecting Hermes skills to Browser Use's browser harness. | Guide |
+| [Hardened Hetzner deployment](usecases/scicco-hermzner-hetzner.md) | A Terraform and Ansible deployment using rootless containers and Tailscale-only access. | Project |
+| [Integrated self-hosted stack](usecases/integrated-self-hosted-hermes-stack.md) | A tiered Docker stack for inference, search, memory, automation, and monitoring. | Project |
+| [Declarative Kubernetes fleet](usecases/kubernetes-declarative-agent-fleet.md) | Agent configuration, skills, schedules, and storage reconciled from Kubernetes resources. | Project |
+| [Razorpay employee-agent fleet](usecases/razorpay-isolated-employee-agents.md) | A production account of isolated employee agents with controlled, attributable network access. | Case study |
+
+[↑ Browse categories](#find-a-use-case)
+
+### Interfaces & Integrations
+
+| Use case | What you get | Format |
+| --- | --- | --- |
+| [Browser and admin interfaces](usecases/browser-admin-uis.md) | A comparison of official and community browser interfaces for agent operations. | Guide |
+| [Open WebUI frontend](usecases/open-webui-frontend.md) | A browser chat interface connected to the Hermes API server. | Local demo |
+| [Terminal operator console](usecases/tui-operator-console.md) | Keyboard-driven access to sessions, skills, schedules, logs, and configuration. | Project |
+| [VS Code workspace stream](usecases/hermes-vscode-workspace-stream.md) | Streaming chat, tool output, editor context, and persistent sessions inside VS Code. | Project |
+| [Voice assistant workflows](usecases/voice-assistant.md) | CLI microphone conversations, messaging voice notes, and Discord voice interactions. | Guide |
+| [Continuous live voice](usecases/hermes-live-voice.md) | Interruptible voice sessions with durable background tasks and reconnect completion notices. | Plugin |
+| [Hermes MCP conversation bridge](usecases/hermes-mcp-conversation-bridge.md) | Conversation history, message events, gateway sending, and opt-in tools for MCP clients. | Plugin |
+
+[↑ Browse categories](#find-a-use-case)
+
+### Orchestration & Agent Memory
+
+| Use case | What you get | Format |
+| --- | --- | --- |
+| [Browser demonstration → skill](usecases/browser-workflow-record-to-skill.md) | A recorded browser demonstration converted into a replayable Hermes skill. | Plugin |
+| [Native A2A collaboration](usecases/native-a2a-agent-collaboration.md) | Cross-framework agent discovery and delegation, or Hermes exposed as an authenticated service. | Guide |
+| [Kanban agent swarm](usecases/kanban-multi-agent-swarm.md) | A chat request turned into persistent worker, verifier, and synthesizer tasks. | Guide |
+| [Paperclip managed employee](usecases/paperclip-managed-employee.md) | Hermes workers coordinated through tasks, checkpoints, and persistent sessions. | Project |
+| [Competing AI companies](usecases/competing-autonomous-ai-companies.md) | Two Paperclip teams compared on shared tasks, execution evidence, and skill transfer. | Project |
+| [Deterministic workflow delegation](usecases/deterministic-workflow-delegation.md) | Repeatable jobs moved into checked workflow files with budgets and execution traces. | Skill |
+| [Project-scoped agents](usecases/per-project-scoped-hermes-agents.md) | Project-specific identity, configuration, skills, sessions, and memory through Ankh.md. | Project |
+| [Dynamic Skill Dojo](usecases/dynamic-skill-dojo.md) | Session-driven skill reviews, proposed patches, and optional self-evolution runs. | Skill |
+| [Skill self-evolution](usecases/self-evolution.md) | An evaluation-driven loop for optimizing skills, prompts, and tool descriptions. | Project |
+| [YantrikDB memory via MCP](usecases/yantrikdb-memory-mcp.md) | Persistent cognitive memory with vector, graph, temporal, and contradiction-aware retrieval. | Project |
+| [Hermes Memory OS](usecases/hermes-memory-os.md) | Layered session search, trusted facts, hybrid retrieval, extraction, and a self-curating wiki. | Project |
+| [Zouroboros executor bridge](usecases/zouroboros-swarm-bridge.md) | An archived adapter pattern for running Hermes inside a multi-agent orchestrator. | Project |
+
+[↑ Browse categories](#find-a-use-case)
+
+### Observability & Evaluation
+
+| Use case | What you get | Format |
+| --- | --- | --- |
+| [Labyrinth observability](usecases/hermes-labyrinth-observability.md) | Agent journeys reconstructed from prompts, tools, approvals, failures, and memory activity. | Plugin |
+| [Deterministic record and replay](usecases/deterministic-record-and-replay.md) | Offline run replay and checkpoint forks for comparing execution across models. | Project |
+| [Local API trace debugging](usecases/local-api-trace-debugging.md) | Provider requests, tool payloads, streamed responses, and token usage in a local viewer. | Project |
+| [ClawBench browser evaluation](usecases/clawbench-browser-agent-evaluation.md) | Isolated browser tasks with interception-based scoring and multi-layer execution traces. | Project |
+| [RL training and benchmarks](usecases/rl-training-benchmarks.md) | Agent trajectory generation, benchmark evaluation, and reinforcement-learning environment patterns. | Guide |
+
+[↑ Browse categories](#find-a-use-case)
+
+<!-- catalog-list:end -->
+
+## Install Hermes
+
+Choose a workflow first, then follow its setup. For a new Hermes installation:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
 hermes setup
 ```
 
-Then pick a use case below. The [`/demos`](demos/) folder has three runnable starters: [Daily Briefing](demos/daily-briefing/), [Open WebUI](demos/openwebui/), and [Team Telegram](demos/team-telegram/).
+## Demos and walkthroughs
 
-## Categories
+Three starter demos are included in this repo. They require their own provider and platform configuration:
 
-- [Automation & Scheduling](#automation--scheduling)
-- [Business Operations](#business-operations)
-- [Messaging & Team Bots](#messaging--team-bots)
-- [Coding & Developer Workflows](#coding--developer-workflows)
-- [Frontends & UIs](#frontends--uis)
-- [Home & Device Control](#home--device-control)
-- [Content & Creative Pipelines](#content--creative-pipelines)
-- [Orchestration & Multi-Agent](#orchestration--multi-agent)
-- [Memory & Context](#memory--context)
-- [Observability & Operations](#observability--operations)
-- [Security & Assurance](#security--assurance)
-- [Finance & Trading](#finance--trading)
-- [Deployment Patterns](#deployment-patterns)
-- [Research & Training](#research--training)
-
-## Automation & Scheduling
-
-| Name | Description |
+| Starter | What it demonstrates |
 | --- | --- |
-| [Daily Briefing Bot](usecases/daily-briefing-bot.md) | A scheduled agent that researches topics every morning and delivers a summary to Telegram or Discord. The canonical "hello world" of Hermes automation. |
-| [Zero-Token Notifications](usecases/zero-token-notifications.md) | Cron jobs that only wake the LLM when something actually changed — pre-filter with a Python script, only pay for tokens on meaningful signal. |
-| [Intent-to-Artifacts Workflow](usecases/intent-to-artifacts.md) | A personal workflow for turning rough prompts into runbooks, RSS curation, diagrams, and notes — delivered to Telegram + markdown files. |
-| [X Social Automation Toolset](usecases/x-social-automation-toolset.md) | A native Hermes plugin for X/Twitter search, account reads, trend checks, and operator-approved actions through Xquik. |
-| [Inbox → Slack Daily Digest](usecases/inbox-slack-daily-digest.md) | A weekday 9am cron that classifies your inbox and posts a needs-reply / FYI digest to a Slack channel. No auto-replies. |
-| [Sequenzy Email Marketing Agent](usecases/sequenzy-email-marketing-agent.md) | Use Hermes with Sequenzy skills/CLI to draft lifecycle campaigns, manage subscriber workflows, send tests, and monitor email stats. |
-| [Microsoft Teams Meeting → Action Pipeline](usecases/teams-meeting-action-pipeline.md) | Ingest Microsoft Graph meeting events, prefer transcripts, fall back to recording plus STT, and deliver durable summaries to Teams, Notion, or Linear. |
-| [Self-Hosted Nextcloud Workspace Assistant](usecases/nextcloud-workspace-assistant.md) | Manage Nextcloud files, notes, calendars, tasks, and contacts from Hermes through WebDAV, CalDAV, CardDAV, and the Notes API. |
-| [Browser Demonstration → Reusable Hermes Skill](usecases/browser-workflow-record-to-skill.md) | Record a browser demonstration over CDP, then use `/learn` to build a replay skill. A Nous-built Labs plugin with explicit capture limits and no maintenance commitment. |
+| [Daily Briefing](demos/daily-briefing/) | Scheduled research and Telegram delivery |
+| [Open WebUI](demos/openwebui/) | Hermes API server with a browser frontend |
+| [Team Telegram](demos/team-telegram/) | Shared messaging gateway and Docker terminal backend |
 
-## Business Operations
+The [Matt Pocock skills walkthrough](demos/matt-pocock-skills/) contains sample plans, PRDs, and issue breakdowns. It is a planning example, rather than a fourth executable starter.
 
-| Name | Description |
-| --- | --- |
-| [Service-Business Lead → Estimate → Payment](usecases/service-business-lead-to-payment.md) | Public Hermes skills for a service-job pipeline: qualify, price from a rate card, review in Telegram, create a Stripe test payment link, draft email, and update a SQLite CRM. QuickBooks is not wired in the reference flow. |
-| [Lead Research → YouTrack Briefs](usecases/lead-research-youtrack.md) | A three-person agency's documented workflow turns prospect research into YouTrack tickets with company profiles, operational problems, contact recommendations, and lead priorities. |
-| [Box Hub → Cited Customer-Renewal Brief](usecases/box-renewal-copilot.md) | Box's official Hermes demo analyzes approved Hub documents through Box AI, prepares a cited renewal briefing, and saves reviewed work as a verified Box Note. Uses fictional sample data. |
-| [SEO Audits, Structured Data, and Content Briefs](usecases/seo-audits-content-briefs.md) | A community plugin for technical/site audits, Schema.org checks, local-search analysis, and content briefs. Optional providers require setup; Google OAuth workflows remain disabled. |
+## Evidence and contributing
 
-## Messaging & Team Bots
+New entries need a primary public source: official docs, a companion repository, a deployment issue, or a first-person account. Social posts alone belong in the [research backlog](research/unverified.md). Historical evidence gaps are called out in page summaries.
 
-| Name | Description |
-| --- | --- |
-| [Team Telegram Assistant](usecases/team-telegram-assistant.md) | Always-on shared bot for a small team — coding, research, ops — with per-user sessions, Docker-isolated terminal, and an allowlist. The gateway also supports Discord, Slack, WhatsApp, Signal, Matrix, Email, SMS, and more; the Telegram flow is the cleanest starting point for any of them. |
-| [Enterprise Messaging (Feishu / WeCom)](usecases/enterprise-messaging-feishu-wecom.md) | Production-style Hermes deployments on Chinese enterprise chat platforms — Feishu managed under `launchd`, WeCom with native media-and-vision analysis. |
-| [Voice Assistant Workflows](usecases/voice-assistant.md) | Three modes: CLI mic loop, voice notes in Telegram/Discord, and a Discord voice-channel bot. Same agent, same memory, voice-only I/O. |
-| [Hermes Live Voice](usecases/hermes-live-voice.md) | A community voice gateway + Dashboard plugin that keeps a continuous, interruptible voice session open while durable Hermes `/v1/runs` execute in the background — bounded progress, steer/stop by task ID, completion notices after reconnect. |
-| [Hermes Conversations and Tools for External MCP Clients](usecases/hermes-mcp-conversation-bridge.md) | Official stdio MCP bridge for conversation history, new-message events, gateway sending, and opt-in provider-backed tools. Terminal, file, and delegation tools are excluded. |
+Automated [verification](docs/verification-criteria.md) checks source availability and repository engagement. Those checks do not establish that a workflow works end to end. No integrations were executed during this catalog redesign.
 
-## Coding & Developer Workflows
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the page template and evidence rules. The [catalog data](catalog.json) keeps categories, summaries, and counts in sync:
 
-| Name | Description |
-| --- | --- |
-| [GitHub PR Review (cron)](usecases/github-pr-review-cron.md) | Periodic PR review without opening a webhook endpoint. Authenticated `gh`, a review skill, and a cron job. |
-| [GitHub PR Review (webhook)](usecases/github-pr-review-webhook.md) | Real-time PR comments via a signed GitHub webhook. End-to-end event-driven code review. |
-| [Production Software-Dev Workflow](usecases/production-software-dev-workflow.md) | A field report of daily production development on Hermes — long sessions, delegation, memory, one 12-hour run with ~2.6M replay tokens. |
-| [Local Model Quantization with TurboQuant](usecases/dev-local-model-quantization.md) | Optimize MLX models (Qwen3.5-9B) for local Apple Silicon inference using domain-specific skills — apply, benchmark, document, publish. |
-| [Hermes VS Code Workspace Stream](usecases/hermes-vscode-workspace-stream.md) | A VS Code sidebar over Hermes ACP for streaming chat, tool output, editor context, attached files, model switching, and persistent workspace sessions. |
-| [Function-Calling Patterns](usecases/function-calling-patterns.md) | The `Hermes-Function-Calling` companion repo as a pattern library — yfinance financial data, Pydantic JSON mode, GOAP scratch-pad planning, `@tool` registration, recursive multi-hop via `--max_depth`. |
-| [Large-Spec Retrieval and Spec-to-Code Evidence](usecases/document-structuring-spec-to-code.md) | A Hermes-compatible `doc-str` skill indexes large PDF/DOCX specs and firmware symbols in SQLite, then retrieves citable chunks through TOC-first navigation, FTS5, and optional hybrid search. |
-| [Reverse Engineering and Crash Triage with REA](usecases/rea-reverse-engineering.md) | Official REA MCP integration for inspecting programs, packages, firmware, and captures, plus evidence-based Linux core-dump triage. Some formats need separately installed analysis engines. |
+```bash
+python scripts/render-catalog.py
+python scripts/render-catalog.py --check
+```
 
-## Frontends & UIs
+Run the source checker for a new or substantively changed workflow:
 
-| Name | Description |
-| --- | --- |
-| [Open WebUI Frontend](usecases/open-webui-frontend.md) | Point Open WebUI at the Hermes API server to get a full browser chat frontend for the agent, with session continuity. |
-| [TUI Operator Console](usecases/tui-operator-console.md) | Keyboard-first terminal HUD for managing your agent — live sessions, skills toggle, cron, logs, config editing, multiple themes. |
-
-## Home & Device Control
-
-| Name | Description |
-| --- | --- |
-| [Home Assistant Control](usecases/home-assistant-control.md) | Conversational control of a smart home via four built-in HA tools — list entities, read state, call services. |
-| [Android Device Control](usecases/android-device-control.md) | Remote phone control from a Hermes chat — 36 `android_*` tools for taps, swipes, screenshots, and screen reading via a relay app. |
-| [Hermes iOS Native Engine](usecases/hermes-ios-native-engine.md) | A self-hosted iPhone companion with relay, connector, MCP sensor tools, voice, camera attachments, widgets, location, activity, and HealthKit context. |
-| [Personal AI Hub: Apple Health + Threads + Gmail + Calendar](usecases/personal-ai-hub-apple-health-threads-gmail.md) | Desktop Hermes + Telegram Topics that wires Apple Health, Threads (via open-source skill), Gmail, and Google Calendar into a single chat surface with cross-domain queries. |
-
-## Content & Creative Pipelines
-
-| Name | Description |
-| --- | --- |
-| [Autonovel — House of Bells](usecases/autonovel-house-of-bells.md) | End-to-end autonomous novel, art, and audiobook production. Nous Research's own pipeline shipped a 19-chapter, 79,456-word book with an audiobook and a website. |
-| [Printing-Factory Task Memory](usecases/printing-factory-task-memory.md) | A custom skill that fixes long-context slowness and forgetting during daily factory operations. Local JSON index with sub-second retrieval. |
-| [Screen Recording → Tutorial Video](usecases/creative-screen-recording-video.md) | Feed Hermes a raw screen recording and get a finished tutorial video on HeyGen with your AI avatar — script generation, video production, and memory of preferences for repeat work. |
-| [ComfyUI Workflow Orchestration](usecases/comfyui-workflow-orchestration.md) | Install, launch, and run ComfyUI node-based media generation workflows on demand — from Stable Diffusion to video pipelines, with automatic custom-node installation and deterministic output management. |
-| [AI Video Generation: HTML-to-MP4](usecases/video-generation-html-to-mp4.md) | Hermes writes designed HTML compositions (via Open Design), then renders to MP4 via HyperFrames — GSAP animations, shader transitions, TTS narration, all code-driven with no timeline editor. |
-| [Translation with Back-Translation Checks](usecases/translation-backcheck-plugin.md) | A first-party reference plugin runs translation and classification concurrently, then back-translates for a heuristic quality check through the host's async LLM API. |
-
-## Orchestration & Multi-Agent
-
-| Name | Description |
-| --- | --- |
-| [Paperclip Managed Employee](usecases/paperclip-managed-employee.md) | Hermes running as a worker inside Nous Research's Paperclip task-orchestration system, with persistent sessions and checkpoints. |
-| [Self-Evolution](usecases/self-evolution.md) | A GEPA + DSPy loop that optimizes your Hermes skills, prompts, and tool text, producing PR-ready improvements for a few dollars per run. |
-| [Zouroboros Swarm Bridge](usecases/zouroboros-swarm-bridge.md) | Hermes as one of four interchangeable executors (Claude Code, Codex, Gemini, Hermes) inside a third-party multi-agent orchestrator. Bash-bridge adapter pattern with shared identity. |
-| [Matt Pocock Skills + Sub-Agents](usecases/matt-pocock-skills-subagents.md) | Use Matt Pocock's open-source skills (`/grill-me`, `/to-prd`, `/to-issues`) for planning and scoping, then Hermes sub-agents for parallel implementation of vertical-sliced issues — with HITL gates to stop AI slop before it ships. |
-| [Dynamic Skill Dojo](usecases/dynamic-skill-dojo.md) | A monitoring and improvement loop that reads session history, ranks weak skills, proposes patches or new skills, invokes self-evolution, and reports learning progress. |
-| [Hermes Kanban: Multi-Agent Swarm from Slack](usecases/kanban-multi-agent-swarm.md) | The v0.15 `/kanban` slash command turns a Slack message into a durable multi-agent swarm with named workers, a verifier, and a synthesizer — persistent via `~/.hermes/kanban.db`. |
-| [Deterministic Workflow Delegation](usecases/deterministic-workflow-delegation.md) | Hermes keeps the judgment, a deterministic runner keeps the receipts: repeatable jobs graduate from chat into checked `.nika.yaml` DAG files — audited before any token is spent, budget-capped, with tamper-evident run traces. Offline demo, zero keys. |
-| [Native A2A Agent Collaboration](usecases/native-a2a-agent-collaboration.md) | Discover and call specialist agents across machines or frameworks, or expose Hermes as an authenticated A2A service with streaming, audit logs, and anti-loop controls. |
-| [Per-Project Scoped Hermes Agents](usecases/per-project-scoped-hermes-agents.md) | Ankh.md gives each project folder its own Hermes identity, config, skills, sessions, and memory while preserving the default global agent elsewhere. |
-| [Competing Autonomous AI Companies](usecases/competing-autonomous-ai-companies.md) | Run two Paperclip companies with Hermes workers against identical tasks, then compare execution evidence and transfer learned skills across teams. |
-
-## Memory & Context
-
-| Name | Description |
-| --- | --- |
-| [YantrikDB Cognitive Memory (via MCP)](usecases/yantrikdb-memory-mcp.md) | Replace or augment native memory with a dedicated cognitive DB — vector + knowledge graph + temporal decay + contradiction detection. Integrates over MCP, so no Hermes plugin needed. |
-| [Obsidian Vault as a Second Brain](usecases/obsidian-second-brain.md) | Wire Hermes into an Obsidian vault for persistent knowledge — read notes, create daily dashboards, cross-reference tags, maintain a self-improving personal knowledge base. |
-| [Hermes Memory OS](usecases/hermes-memory-os.md) | A seven-layer local memory stack with session search, trusted facts, hybrid vector retrieval, automatic extraction, a self-curating wiki, and ground-truth rules. |
-| [Quantified-Self Life OS](usecases/quantified-self-life-os.md) | Track personal routines and wellness signals, detect evidence-bounded correlations, and deliver scheduled morning, evening, and weekly reflections. |
-
-## Observability & Operations
-
-| Name | Description |
-| --- | --- |
-| [Hermes Labyrinth Observability](usecases/hermes-labyrinth-observability.md) | A read-only dashboard plugin that turns prompts, tool calls, failures, approvals, model switches, cron runs, and memory hits into auditable agent journeys. |
-| [Deterministic Record and Replay of Hermes Runs](usecases/deterministic-record-and-replay.md) | Records a run at the process and socket boundary, replays it offline byte for byte with the network off, and forks it from any checkpoint onto a different model. Needs no plugin and no change to `config.yaml`. |
-| [Autonomous SRE Incident Commander](usecases/autonomous-sre-incident-commander.md) | Detect, triage, diagnose, safely remediate, verify, document, and learn from Linux, Docker, or Kubernetes incidents. |
-| [Local API Trace Debugging](usecases/local-api-trace-debugging.md) | Run Hermes through claude-tap to inspect provider requests, prompts, tools, streaming responses, token usage, and request diffs in a local viewer. |
-| [Network Discovery → NetBox Inventory](usecases/netbox-network-inventory.md) | A first-person setup uses a discovery host and NetBox API to refresh network inventory daily, with optional Proxmox configuration and change-history capture. The exact generated skill is private. |
-
-## Security & Assurance
-
-| Name | Description |
-| --- | --- |
-| [Autonomous Penetration Testing with Kali](usecases/autonomous-penetration-testing.md) | A Kali-backed Hermes skill for authorized security assessments with scope confirmation, playbooks, zero-findings fallback, approval gates, and structured reports. |
-| [Sandboxed Hermes with NVIDIA OpenShell](usecases/hermes-openshell-sandbox.md) | Run Hermes behind out-of-process network, filesystem, syscall, and inference policies while retaining approved memory, skills, cron, and gateway capabilities. |
-| [Mask Sensitive Numbers in Stored Final Replies](usecases/final-response-pii-redaction.md) | A first-party output-hook demo masks selected US SSN and card-number formats in final stored replies. Raw CLI streaming can precede the filter; this is not comprehensive DLP. |
-
-## Finance & Trading
-
-| Name | Description |
-| --- | --- |
-| [Weather Trading on Polymarket](usecases/weather-trading-polymarket.md) | Autonomous weather prediction-market trading — Kelly Criterion position sizing, EV scoring against market odds, self-calibrating with real traders reporting $300→$123K in 3 months on a $5 VPS. |
-| [ERPClaw: Plain-English ERP and Accounting](usecases/erpclaw-plain-english-erp.md) | Self-hosted double-entry ERP and accounting run from chat. Invoicing, inventory, payroll, and multi-company books, written to a local database by deterministic skill actions. |
-| [First-Dollar Business Guidance](usecases/first-dollar-business-guidance.md) | Hermes Startup: a local-first skill that turns your personal profile into 3 of 10 evidence-labeled ideas, one bounded next action, and a prepaid per-call tool balance — no subscription, no income guarantee. |
-| [Receipt Text or Image → Structured JSON](usecases/receipt-to-structured-json.md) | A first-party `/receipt-extract` plugin turns a local receipt into vendor, total, currency, and tag fields using host-owned structured LLM access. |
-
-## Deployment Patterns
-
-| Name | Description |
-| --- | --- |
-| [Hermes on Fly.io](usecases/hermes-on-flyio.md) | Official Fly-apps deployment guide — run Hermes as a Fly Machine with a volume-backed `/opt/data`, daily snapshots, and ~$15/month baseline. |
-| [Local & Proxy Model Backends](usecases/local-and-proxy-models.md) | Run Hermes against Ollama, vLLM, oMLX, or a custom OpenAI-compatible proxy — for cost control, data locality, or model choice beyond the defaults. |
-| [Local Model Auto-Detection](usecases/local-model-auto-detection.md) | Hermes probes your local inference server, identifies the running model, detects context window, and auto-configures — eliminates first-setup friction for Ollama, llama.cpp, MLX, and vLLM. |
-| [Headless Daemon Server](usecases/headless-daemon-server.md) | A self-managed Linux VPS pattern that runs Hermes gateway and native cron under `systemd` with a dedicated service user and reboot-safe scheduling. |
-| [Hermes + Browser Harness on Hostinger](usecases/hermes-browser-harness-hostinger.md) | A 10-minute copy-paste script (54★ gist) that wires Browser Use's Browser Harness as a Hermes skill on a consumer VPS — symlinked skill, OpenRouter, Browser Use Cloud free tier. |
-| [scicco/hermzner: Hardened Hermes on Hetzner](usecases/scicco-hermzner-hetzner.md) | Terraform + Ansible setup for a Hetzner VPS with rootless Podman, Tailscale-only network, UFW default-deny, read-only root FS, and pinned image digests. Production-grade, `nascent` (3★). |
-| [Enterprise Cloud (Bedrock / Azure AI Foundry / NVIDIA Build)](usecases/enterprise-cloud-deployment.md) | First-class provider IDs for the three major enterprise model gateways — Bedrock Converse API + Guardrails, Azure Foundry endpoint, NVIDIA NIM cloud or self-hosted. For regulated / procurement-constrained shops. |
-| [China-Region LLM Endpoints](usecases/china-region-llm-endpoints.md) | Dedicated China-facing provider IDs for Kimi/Moonshot, MiniMax, and z.ai/GLM — auto-probing endpoints, no hand-wired base URLs. Pair with Feishu/WeCom for a fully domestic stack. |
-| [Nous Portal Gateway](usecases/nous-portal-gateway.md) | The maintainers' recommended default — one OAuth login unlocks 300+ models plus a Tool Gateway (web search, image gen, TTS, browser) and Nous Chat. Scoped JWTs, no per-provider key juggling. |
-| [Coding-Tool Subscriptions as Backends (Copilot / Codex / Claude Max)](usecases/oauth-cloud-providers.md) | Reuse existing coding-tool subscriptions as Hermes model backends — Copilot direct + ACP, Codex device-code OAuth, Claude Max extra-usage OAuth — with native auth and 401 one-shot recovery. |
-| [Integrated Self-Hosted Hermes Stack](usecases/integrated-self-hosted-hermes-stack.md) | Bootstrap Hermes with model routing, local inference, search, vector memory, automation, notifications, observability, and monitoring through a tiered Docker stack. |
-| [Persistent Hermes on Hugging Face Spaces](usecases/hermes-on-hugging-face-spaces.md) | Deploy Hermes as a Space with a web dashboard and messaging gateway, synchronizing durable agent state to a private Hugging Face Dataset. |
-| [Declarative Hermes Agents on Kubernetes](usecases/kubernetes-declarative-agent-fleet.md) | A community operator reconciles agent config, skills, schedules, workspace content, and storage from reviewable Kubernetes custom resources. |
-| [Razorpay: Isolated, Always-On Employee Agents](usecases/razorpay-isolated-employee-agents.md) | A first-person engineering report of 220+ employee Hermes agents with per-user namespaces, encrypted storage, identity checks, and screened, attributable egress. Deployment code is private. |
-
-## Research & Training
-
-| Name | Description |
-| --- | --- |
-| [Multi-Platform Social Media Research](usecases/multi-platform-research.md) | Run a single query across Reddit, X/Twitter, YouTube, Hacker News, and Polymarket via a single Python engine. Firefox-cookie auth for X, no API key needed on WSL. Delivered as a unified markdown brief to Telegram or local storage. |
-| [RL Training & Benchmarks](usecases/rl-training-benchmarks.md) | Use Hermes environments to train and evaluate tool-calling models. The TBLite benchmark covers 100 tasks with strong correlation to TB2. |
-| [ClawBench Browser-Agent Evaluation](usecases/clawbench-browser-agent-evaluation.md) | Run Hermes against isolated live-web tasks with native browser tools over CDP, interception-based scoring, and five-layer traces for debugging. |
-| [Browser & Admin UIs](usecases/browser-admin-uis.md) | The official web dashboard plus community UIs — browser access to sessions, files, cron, and control plane. |
-
-## Runnable demos
-
-Three starter demos live in [`/demos`](demos/). Each has a `README.md`, a `.env.example`, and a one-command setup:
-
-- [**daily-briefing**](demos/daily-briefing/) — cron + web search + Telegram delivery
-- [**matt-pocock-skills**](demos/matt-pocock-skills/) — planning pipeline (`/grill-with-docs` → `/to-issues`) + verification script demo
-- [**openwebui**](demos/openwebui/) — Hermes API server + Open WebUI via Docker Compose
-- [**team-telegram**](demos/team-telegram/) — gateway + Telegram + Docker terminal backend
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md). The short version: **one primary source minimum** — official docs, a Nous companion repo, a GitHub issue with real deployment detail, or a first-person blog post. X posts and "community build" marketing pages don't count as primary evidence.
-
-### For Contributors
-
-Every PR that touches `usecases/*.md` triggers automated verification. Learn how it works and how to pass it:
-
-- [docs/verification-criteria.md](docs/verification-criteria.md) — how scoring works, what's green vs yellow vs red, and how to run the script locally before submitting
-- `python scripts/verify-usecase.py --usecase usecases/my-topic.md --check all` — generate your own verification report
-
-> Please only submit use cases you have personally run (at least once) or that you can trace to a primary public source. No crypto use cases.
+```bash
+python scripts/verify-usecase.py --usecase usecases/my-topic.md --check all
+```
 
 ## License
 

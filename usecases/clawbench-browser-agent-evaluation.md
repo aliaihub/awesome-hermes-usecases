@@ -1,5 +1,16 @@
 # ClawBench Browser-Agent Evaluation
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#observability--evaluation) · **Observability & Evaluation**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Isolated browser tasks with interception-based scoring and multi-layer execution traces. |
+| **Requires** | Python 3.11+ and uv; Docker or Podman; supported model API endpoint. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration · **Confidence:** High · **Demo status:** Runnable
 
 ## Pain Point

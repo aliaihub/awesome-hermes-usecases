@@ -1,5 +1,16 @@
 # Local API Trace Debugging with claude-tap
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#observability--evaluation) · **Observability & Evaluation**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Provider requests, tool payloads, streamed responses, and token usage in a local viewer. |
+| **Requires** | Python 3.11+; claude-tap; Hermes provider configuration; browser. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration · **Confidence:** High · **Demo status:** Runnable local proxy and viewer
 
 ## Pain Point
@@ -63,4 +74,3 @@ Use the normal Hermes prompt that reproduces the behavior under investigation. F
 - claude-tap repository and Hermes examples: <https://github.com/liaohch3/claude-tap>
 - claude-tap guide: <https://liaohch3.com/claude-tap/>
 - Hermes Agent repository: <https://github.com/NousResearch/hermes-agent>
-

@@ -1,5 +1,16 @@
 # Sandboxed Hermes with NVIDIA OpenShell
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#infrastructure--security) · **Infrastructure & Security**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Hermes tools operating within external network, filesystem, syscall, and inference policies. |
+| **Requires** | Docker; NVIDIA OpenShell; supported inference backend; configured policies. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration · **Confidence:** Medium-High · **Demo status:** Runnable multi-architecture image
 
 ## Pain Point

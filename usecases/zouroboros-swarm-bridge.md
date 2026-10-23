@@ -1,5 +1,16 @@
 # Zouroboros Swarm Executor Bridge
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#orchestration--agent-memory) · **Orchestration & Agent Memory**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | An archived adapter pattern for running Hermes inside a multi-agent orchestrator. |
+| **Requires** | Working Hermes installation; Node.js/pnpm; bridge or successor monorepo setup. |
+| **Available** | Project |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Ecosystem integration · **Confidence:** Medium-High · **Demo status:** Bridge repo (archived — migrated to monorepo)
 
 ## Pain Point

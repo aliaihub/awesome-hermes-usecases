@@ -1,5 +1,16 @@
 # Lead Research → YouTrack Briefs
 
+<!-- catalog-summary:start -->
+[← Browse use cases](../README.md#business--administration) · **Business & Administration**
+
+| At a glance | Details |
+| --- | --- |
+| **Outcome** | Prospect research organized into company briefs and prioritized YouTrack tickets. |
+| **Requires** | Web research; custom context and lead skills; YouTrack API or MCP access. |
+| **Available** | Case study |
+| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+<!-- catalog-summary:end -->
+
 **Class:** Independent deployment · **Confidence:** Medium-High · **Demo status:** Case study
 
 ## Pain Point
