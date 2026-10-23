@@ -5,7 +5,7 @@
 # Awesome Hermes Agent Use Cases
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-77-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-82-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/ali-erfan-dev/awesome-hermes-usecases?label=Last%20Update&style=flat-square)
 ![Stars](https://img.shields.io/github/stars/ali-erfan-dev/awesome-hermes-usecases?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
@@ -62,6 +62,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Sequenzy Email Marketing Agent](usecases/sequenzy-email-marketing-agent.md) | Use Hermes with Sequenzy skills/CLI to draft lifecycle campaigns, manage subscriber workflows, send tests, and monitor email stats. |
 | [Microsoft Teams Meeting → Action Pipeline](usecases/teams-meeting-action-pipeline.md) | Ingest Microsoft Graph meeting events, prefer transcripts, fall back to recording plus STT, and deliver durable summaries to Teams, Notion, or Linear. |
 | [Self-Hosted Nextcloud Workspace Assistant](usecases/nextcloud-workspace-assistant.md) | Manage Nextcloud files, notes, calendars, tasks, and contacts from Hermes through WebDAV, CalDAV, CardDAV, and the Notes API. |
+| [Browser Demonstration → Reusable Hermes Skill](usecases/browser-workflow-record-to-skill.md) | Record a browser demonstration over CDP, then use `/learn` to build a replay skill. A Nous-built Labs plugin with explicit capture limits and no maintenance commitment. |
 
 ## Business Operations
 
@@ -70,6 +71,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Service-Business Lead → Estimate → Payment](usecases/service-business-lead-to-payment.md) | Public Hermes skills for a service-job pipeline: qualify, price from a rate card, review in Telegram, create a Stripe test payment link, draft email, and update a SQLite CRM. QuickBooks is not wired in the reference flow. |
 | [Lead Research → YouTrack Briefs](usecases/lead-research-youtrack.md) | A three-person agency's documented workflow turns prospect research into YouTrack tickets with company profiles, operational problems, contact recommendations, and lead priorities. |
 | [Box Hub → Cited Customer-Renewal Brief](usecases/box-renewal-copilot.md) | Box's official Hermes demo analyzes approved Hub documents through Box AI, prepares a cited renewal briefing, and saves reviewed work as a verified Box Note. Uses fictional sample data. |
+| [SEO Audits, Structured Data, and Content Briefs](usecases/seo-audits-content-briefs.md) | A community plugin for technical/site audits, Schema.org checks, local-search analysis, and content briefs. Optional providers require setup; Google OAuth workflows remain disabled. |
 
 ## Messaging & Team Bots
 
@@ -79,6 +81,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Enterprise Messaging (Feishu / WeCom)](usecases/enterprise-messaging-feishu-wecom.md) | Production-style Hermes deployments on Chinese enterprise chat platforms — Feishu managed under `launchd`, WeCom with native media-and-vision analysis. |
 | [Voice Assistant Workflows](usecases/voice-assistant.md) | Three modes: CLI mic loop, voice notes in Telegram/Discord, and a Discord voice-channel bot. Same agent, same memory, voice-only I/O. |
 | [Hermes Live Voice](usecases/hermes-live-voice.md) | A community voice gateway + Dashboard plugin that keeps a continuous, interruptible voice session open while durable Hermes `/v1/runs` execute in the background — bounded progress, steer/stop by task ID, completion notices after reconnect. |
+| [Hermes Conversations and Tools for External MCP Clients](usecases/hermes-mcp-conversation-bridge.md) | Official stdio MCP bridge for conversation history, new-message events, gateway sending, and opt-in provider-backed tools. Terminal, file, and delegation tools are excluded. |
 
 ## Coding & Developer Workflows
 
@@ -91,6 +94,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Hermes VS Code Workspace Stream](usecases/hermes-vscode-workspace-stream.md) | A VS Code sidebar over Hermes ACP for streaming chat, tool output, editor context, attached files, model switching, and persistent workspace sessions. |
 | [Function-Calling Patterns](usecases/function-calling-patterns.md) | The `Hermes-Function-Calling` companion repo as a pattern library — yfinance financial data, Pydantic JSON mode, GOAP scratch-pad planning, `@tool` registration, recursive multi-hop via `--max_depth`. |
 | [Large-Spec Retrieval and Spec-to-Code Evidence](usecases/document-structuring-spec-to-code.md) | A Hermes-compatible `doc-str` skill indexes large PDF/DOCX specs and firmware symbols in SQLite, then retrieves citable chunks through TOC-first navigation, FTS5, and optional hybrid search. |
+| [Reverse Engineering and Crash Triage with REA](usecases/rea-reverse-engineering.md) | Official REA MCP integration for inspecting programs, packages, firmware, and captures, plus evidence-based Linux core-dump triage. Some formats need separately installed analysis engines. |
 
 ## Frontends & UIs
 
@@ -151,6 +155,7 @@ Then pick a use case below. The [`/demos`](demos/) folder has three runnable sta
 | [Deterministic Record and Replay of Hermes Runs](usecases/deterministic-record-and-replay.md) | Records a run at the process and socket boundary, replays it offline byte for byte with the network off, and forks it from any checkpoint onto a different model. Needs no plugin and no change to `config.yaml`. |
 | [Autonomous SRE Incident Commander](usecases/autonomous-sre-incident-commander.md) | Detect, triage, diagnose, safely remediate, verify, document, and learn from Linux, Docker, or Kubernetes incidents. |
 | [Local API Trace Debugging](usecases/local-api-trace-debugging.md) | Run Hermes through claude-tap to inspect provider requests, prompts, tools, streaming responses, token usage, and request diffs in a local viewer. |
+| [Network Discovery → NetBox Inventory](usecases/netbox-network-inventory.md) | A first-person setup uses a discovery host and NetBox API to refresh network inventory daily, with optional Proxmox configuration and change-history capture. The exact generated skill is private. |
 
 ## Security & Assurance
 
