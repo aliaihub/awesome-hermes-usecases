@@ -1,60 +1,74 @@
-# Team Telegram Demo
+# Team Telegram starter
 
-A runnable setup for the [Team Telegram Assistant](../../usecases/team-telegram-assistant.md) use case. Gets a Hermes Telegram bot running on a VPS with the Docker terminal backend (so shell tools are sandboxed) and a user allowlist.
+Configure a fresh Hermes profile for a small, trusted team's Telegram bot. This follows the [Team Telegram Assistant](../../usecases/team-telegram-assistant.md) pattern.
 
-## What you'll end up with
+## Requires
 
-- A Telegram bot that responds only to users on your allowlist.
-- Per-user sessions — each teammate has their own memory and context.
-- Docker-backed terminal tool — `rm -rf` at worst destroys a container.
-- Optional home channel for cron delivery and alerts.
+- Linux, Bash, Python 3.11+, and Hermes compatible with v0.22.5.
+- Docker with a running daemon.
+- A bot token from [BotFather](https://t.me/BotFather) and numeric user IDs for permitted teammates.
+- A fresh profile with its own configured model. Do not clone a personal profile into a shared bot.
 
-## Prerequisites
-
-- A VPS (or any Linux/macOS machine) running Hermes Agent, reachable on the internet.
-- Docker installed on the host (required for the Docker terminal backend).
-- A Telegram bot from [@BotFather](https://t.me/BotFather) — save the token.
-- Your Telegram user ID from [@userinfobot](https://t.me/userinfobot) (and the IDs of anyone else you want to allow).
+Telegram sessions are separated, but teammates still use one Hermes profile: its persistent memory, credentials, configured tools, and accessible resources are shared. A Docker terminal backend applies to shell tools; it does not provide full tenant isolation for every integration. Use separate profiles and credentials when people need separate trust boundaries.
 
 ## Setup
 
-1. Copy `.env.example` to `.env` and fill it in:
-   ```bash
-   cp .env.example .env
-   # edit .env
-   ```
-
-2. Apply the config and install the gateway as a service:
-   ```bash
-   bash setup.sh
-   ```
-
-   The script:
-   - Sets `TELEGRAM_BOT_TOKEN`, `TELEGRAM_ALLOWED_USERS`, and (if provided) `TELEGRAM_HOME_CHANNEL` via `hermes config`.
-   - Switches the terminal backend to Docker.
-   - Installs the gateway as a user systemd service so it survives reboot.
-
-3. DM your bot on Telegram. It should respond. If you added teammates to the allowlist, they can DM it too — each gets their own session.
-
-## Adding a home-channel cron job
-
-Once the home channel is set, any cron job with `--deliver telegram` will post there. Example: a nightly PR digest for a repo you maintain.
+From this directory:
 
 ```bash
-hermes cron create "0 22 * * *" \
-  "List PRs on YOUR_ORG/YOUR_REPO merged in the last 24h. Group by
-   author. Keep under 300 words." \
-  --name "Nightly PR digest" \
-  --deliver telegram
+hermes profile create team-demo
+hermes --profile team-demo setup
+cp .env.example .env
 ```
 
-## Security checklist before you share this
+Fill in the bot token and comma-separated positive user IDs. Keep bot credentials out of commits; `.env` files are ignored. Review the commands, then apply:
 
-- [ ] `TELEGRAM_ALLOWED_USERS` contains only people you trust to run arbitrary code.
-- [ ] Terminal backend is `docker`, not `local`. Check: `hermes config get terminal.backend`.
-- [ ] Model provider keys are in Hermes config, not in the Telegram chat.
-- [ ] If the bot is in a group, the group is private and limited to allowlisted members.
+```bash
+bash setup.sh --dry-run
+bash setup.sh
+bash smoke.sh
+```
+
+The scripts locate `.env` beside themselves or accept `--env-file /absolute/path/to/settings.env`. They parse literal values without executing shell expressions.
+
+Setup checks the Docker daemon before changing settings. It persists `TELEGRAM_BOT_TOKEN` and `TELEGRAM_ALLOWED_USERS`, disables the broad allow-all settings, and selects `terminal.backend=docker` using the selected profile. An optional home channel is saved for scheduled delivery. It does not install services or start a bot.
+
+Start the profile's gateway:
+
+```bash
+hermes --profile team-demo gateway
+```
+
+Use a fresh profile so old group allowlists, guest-mode settings, plugins, and other access rules do not silently broaden this example. For an existing profile, review the full [Telegram access configuration](https://hermes-agent.nousresearch.com/docs/user-guide/messaging/telegram) before sharing it.
+
+## Sample input and expected output
+
+From an allowlisted account, DM the bot:
+
+```text
+Reply with exactly PONG. Do not call any tools.
+```
+
+Expected final text: `PONG`. This is an acceptance target, not a captured response. A model request can incur charges.
+
+## Checks
+
+`smoke.sh` checks the CLI, Docker daemon, selected backend, configured allowed-user list, and broad allow-all settings. It does not authenticate to Telegram, inspect every possible access rule, execute shell tools inside Docker, or exercise the model.
+
+Manual live acceptance:
+
+1. Confirm the allowlisted account receives the response above.
+2. Confirm a second allowlisted teammate gets a distinct session.
+3. Confirm an unlisted account does not receive an agent response.
+4. Ask the bot to run a harmless `pwd`; inspect the Docker backend's execution to confirm where the command ran.
+
+Record the Hermes/model versions, environment, date, and results using the [test record template](../../docs/tested-results.md#recording-a-live-test). None of these live checks has been performed for this milestone.
+
+Stop the foreground gateway with Ctrl+C. For service operation, follow the upstream gateway instructions; recheck the allowlist after configuration changes.
 
 ## Sources
 
-- Official tutorial: <https://hermes-agent.nousresearch.com/docs/guides/team-telegram-assistant/>
+- [Official team tutorial](https://hermes-agent.nousresearch.com/docs/guides/team-telegram-assistant)
+- [Telegram settings and access rules](https://hermes-agent.nousresearch.com/docs/user-guide/messaging/telegram)
+- [v0.22.5 environment-key routing](https://github.com/NousResearch/hermes-agent/blob/v0.22.5/hermes_cli/config_env_routing.py)
+- [Profile guide](https://hermes-agent.nousresearch.com/docs/user-guide/profiles)

@@ -8,7 +8,7 @@
 | **Outcome** | Scheduled topic research delivered as a morning summary to your messaging app. |
 | **Requires** | Configured model and web search; Hermes cron; Telegram or Discord gateway. |
 | **Available** | Local demo |
-| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+| **Validation** | Starter configuration and failure paths tested offline; live integration pending. [Test scope](../docs/tested-results.md). |
 <!-- catalog-summary:end -->
 
 **Class:** First-party demo · **Confidence:** High · **Demo status:** [Runnable](../demos/daily-briefing/)

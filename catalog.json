@@ -93,7 +93,8 @@
       "category": "Business & Administration",
       "outcome": "A shared team bot with per-user sessions and optional Docker terminal isolation.",
       "format": "Local demo",
-      "requires": "Telegram bot token and user allowlist; Docker for isolated terminal access."
+      "requires": "Telegram bot token and user allowlist; Docker for isolated terminal access.",
+      "validation": "Starter configuration and failure paths tested offline; live integration pending. [Test scope](../docs/tested-results.md)."
     },
     {
       "slug": "teams-meeting-action-pipeline",
@@ -245,7 +246,8 @@
       "category": "Personal Productivity",
       "outcome": "Scheduled topic research delivered as a morning summary to your messaging app.",
       "format": "Local demo",
-      "requires": "Configured model and web search; Hermes cron; Telegram or Discord gateway."
+      "requires": "Configured model and web search; Hermes cron; Telegram or Discord gateway.",
+      "validation": "Starter configuration and failure paths tested offline; live integration pending. [Test scope](../docs/tested-results.md)."
     },
     {
       "slug": "inbox-slack-daily-digest",
@@ -510,7 +512,8 @@
       "category": "Interfaces & Integrations",
       "outcome": "A browser chat interface connected to the Hermes API server.",
       "format": "Local demo",
-      "requires": "Hermes API server and API key; Docker Compose; configured model provider."
+      "requires": "Hermes API server and API key; Docker Compose; configured model provider.",
+      "validation": "Starter configuration and failure paths tested offline; live integration pending. [Test scope](../docs/tested-results.md)."
     },
     {
       "slug": "tui-operator-console",

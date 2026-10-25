@@ -8,7 +8,7 @@
 | **Outcome** | A browser chat interface connected to the Hermes API server. |
 | **Requires** | Hermes API server and API key; Docker Compose; configured model provider. |
 | **Available** | Local demo |
-| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+| **Validation** | Starter configuration and failure paths tested offline; live integration pending. [Test scope](../docs/tested-results.md). |
 <!-- catalog-summary:end -->
 
 **Class:** Official integration · **Confidence:** High · **Demo status:** [Runnable](../demos/openwebui/)

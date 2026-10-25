@@ -92,6 +92,14 @@ Anything non-obvious — gotchas, trade-offs, security.
 - Primary source link(s) — official docs, companion repo, GitHub issue, or first-person blog.
 ```
 
+## Adding recipes and starter evidence
+
+- Recipes belong in `recipes/`, with Goal, Requires, Steps, Expected result, Failure check, and Sources sections. Update the cookbook index and keep its documented count accurate.
+- Improve existing starter kits before introducing another one. Include a configuration template, redacted dry run, scoped smoke check, sample input/output, and cleanup instructions.
+- Run `python -m unittest discover -s tests -v`, `python scripts/check-practical.py`, and `python scripts/render-catalog.py --check` for changes to these materials.
+- Record actual execution evidence in [tested results](docs/tested-results.md). State the Hermes version, provider/model, environment, date, command, outcome, and limitations. Mark fixture-based tests as offline; do not label source review or mocked commands as a live integration pass.
+- Keep real credentials and customer data out of fixtures and published test records.
+
 ## Getting Help
 
 Open an issue tagged `question` if you're unsure whether something qualifies. Easier to ask first than to have a PR sit.

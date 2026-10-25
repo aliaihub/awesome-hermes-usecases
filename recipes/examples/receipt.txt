@@ -1,0 +1,5 @@
+Example Stationery
+Notebook     CAD 6.00
+Pen          CAD 2.00
+Tax          CAD 0.40
+Total        CAD 8.40

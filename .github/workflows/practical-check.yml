@@ -1,0 +1,51 @@
+name: Starter kits and recipes
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'demos/**'
+      - 'recipes/**'
+      - 'tests/**'
+      - 'docs/tested-results.md'
+      - 'scripts/check-practical.py'
+      - 'scripts/check-upstream-cron.py'
+      - '.github/workflows/practical-check.yml'
+  pull_request:
+    paths:
+      - 'demos/**'
+      - 'recipes/**'
+      - 'tests/**'
+      - 'docs/tested-results.md'
+      - 'scripts/check-practical.py'
+      - 'scripts/check-upstream-cron.py'
+      - '.github/workflows/practical-check.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Offline behavior and failure-path tests
+        run: python -m unittest discover -s tests -v
+      - name: Recipe structure, local links, and shell syntax
+        run: python scripts/check-practical.py
+      - name: Check cron examples against the pinned upstream parser
+        run: |
+          curl --fail --silent --show-error --location --retry 2 --max-time 30 \
+            https://raw.githubusercontent.com/NousResearch/hermes-agent/bf0203a794a07aac3ff764972ab9087baa4e4f4e/hermes_cli/subcommands/cron.py \
+            -o "$RUNNER_TEMP/hermes-cron.py"
+          python scripts/check-upstream-cron.py "$RUNNER_TEMP/hermes-cron.py"
+      - name: Validate actual Compose configuration without starting containers
+        env:
+          API_SERVER_KEY: offline-compose-fixture-key-1234567890
+        run: docker compose --env-file demos/openwebui/.env.example -f demos/openwebui/docker-compose.yml config --quiet
