@@ -14,6 +14,8 @@
 
 Browse by the result you want, then open a page for requirements, setup, prompts, and sources. Public evidence and execution testing are different: each page states its validation limits.
 
+**Build something:** [Starter kits](demos/README.md) · [10 reusable recipes](recipes/README.md) · [Tested results](docs/tested-results.md)
+
 ## Start here
 
 Six entry points, from everyday automation to specialist tools. These are featured examples, not a difficulty ranking.
@@ -242,7 +244,7 @@ The [Matt Pocock skills walkthrough](demos/matt-pocock-skills/) contains sample 
 
 New entries need a primary public source: official docs, a companion repository, a deployment issue, or a first-person account. Social posts alone belong in the [research backlog](research/unverified.md). Historical evidence gaps are called out in page summaries.
 
-Automated [verification](docs/verification-criteria.md) checks source availability and repository engagement. Those checks do not establish that a workflow works end to end. No integrations were executed during this catalog redesign.
+Automated [verification](docs/verification-criteria.md) checks source availability and repository engagement. Those checks do not establish that a workflow works end to end. See [tested results](docs/tested-results.md) for execution evidence and its limits.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the page template and evidence rules. The [catalog data](catalog.json) keeps categories, summaries, and counts in sync:
 

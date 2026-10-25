@@ -8,7 +8,7 @@
 | **Outcome** | A shared team bot with per-user sessions and optional Docker terminal isolation. |
 | **Requires** | Telegram bot token and user allowlist; Docker for isolated terminal access. |
 | **Available** | Local demo |
-| **Validation** | Sources linked below; workflow not run during this catalog redesign. |
+| **Validation** | Starter configuration and failure paths tested offline; live integration pending. [Test scope](../docs/tested-results.md). |
 <!-- catalog-summary:end -->
 
 **Class:** First-party demo · **Confidence:** High · **Demo status:** [Runnable](../demos/team-telegram/)

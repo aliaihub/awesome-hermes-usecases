@@ -1,0 +1,9 @@
+Research recent developments in AI agents, open-source models, and developer tools.
+Use the configured web-search tools and inspect the original sources.
+Select up to three substantive items published in the last 24 hours.
+For each item include a headline, publication date, two-sentence summary,
+why a developer should care, and the source URL. Add today's date at the top.
+If fewer than three suitable items are available, report fewer. If search is
+unavailable or sources cannot be verified, report that limitation instead of
+inventing news, dates, or URLs. Return the briefing as your final response;
+the scheduler handles delivery. Do not call messaging tools yourself.
