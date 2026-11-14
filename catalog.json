@@ -323,6 +323,14 @@
       "validation": "Legacy evidence gap: sources are named but no primary source URL is linked. Workflow not run during this redesign."
     },
     {
+      "slug": "youtube-transcript-research",
+      "title": "YouTube transcripts and search",
+      "category": "Knowledge & Research",
+      "outcome": "YouTube transcripts with timestamps, video search, and channel and playlist browsing from a Hermes conversation.",
+      "format": "Plugin",
+      "requires": "GetYouTubeTranscript plugin; API key set as YOUTUBE_TRANSCRIPT_API_KEY; account credits per request."
+    },
+    {
       "slug": "home-assistant-control",
       "title": "Home Assistant control",
       "category": "Home & Devices",

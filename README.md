@@ -5,7 +5,7 @@
 # Awesome Hermes Agent Use Cases
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-82-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-83-blue?style=flat-square)
 ![Last Update](https://img.shields.io/github/last-commit/aliaihub/awesome-hermes-usecases?label=Last%20Update&style=flat-square)
 ![Stars](https://img.shields.io/github/stars/aliaihub/awesome-hermes-usecases?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
@@ -37,7 +37,7 @@ Six entry points, from everyday automation to specialist tools. These are featur
 - [Coding & Engineering](#coding--engineering) · 8
 - [Content & Marketing](#content--marketing) · 8
 - [Personal Productivity](#personal-productivity) · 7
-- [Knowledge & Research](#knowledge--research) · 3
+- [Knowledge & Research](#knowledge--research) · 4
 - [Home & Devices](#home--devices) · 3
 - [Infrastructure & Security](#infrastructure--security) · 5
 
@@ -124,6 +124,7 @@ A format label describes what is available. It does not mean we ran or audited t
 | [Obsidian second brain](usecases/obsidian-second-brain.md) | Persistent research notes, daily dashboards, and connected knowledge in an Obsidian vault. | Guide |
 | [Multi-platform social research](usecases/multi-platform-research.md) | A unified brief from Reddit, X, YouTube, Hacker News, and prediction-market research. | Skill |
 | [Weather-market research pattern](usecases/weather-trading-polymarket.md) | A historical weather-feed and market-scoring account; primary source URL missing. | Case study |
+| [YouTube transcripts and search](usecases/youtube-transcript-research.md) | YouTube transcripts with timestamps, video search, and channel and playlist browsing from a Hermes conversation. | Plugin |
 
 [↑ Browse categories](#find-a-use-case)
 
